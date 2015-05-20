@@ -642,7 +642,7 @@ rule address-model ( )
     return <conditional>@boostcpp.deduce-address-model ;
 }
 
-local deducable-architectures = arm mips1 power sparc x86 combined ;
+local deducable-architectures = arm mips1 mips64 power sparc x86 combined ;
 feature.feature deduced-architecture : $(deducable-architectures) : propagated optional composite hidden ;
 for a in $(deducable-architectures)
 {
@@ -660,6 +660,10 @@ rule deduce-architecture ( properties * )
     else if [ configure.builds /boost/architecture//mips1 : $(filtered) : mips1 ]
     {
         result = mips1 ;
+    }
+    else if [ configure.builds /boost/architecture//mips64 : $(filtered) : mips64 ]
+    {
+        result = mips64 ;
     }
     else if [ configure.builds /boost/architecture//power : $(filtered) : power ]
     {
