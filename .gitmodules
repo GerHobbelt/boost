@@ -55,7 +55,7 @@
 	branch = .
 [submodule "config"]
 	path = libs/config
-	url = git@github.com:GerHobbelt/config.git
+	url = https://github.com/GerHobbelt/config.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "log"]
