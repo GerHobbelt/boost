@@ -165,7 +165,7 @@
 	branch = .
 [submodule "date_time"]
 	path = libs/date_time
-	url = git@github.com:boostorg/date_time.git
+	url = git@github.com:GerHobbelt/date_time.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "logic"]
@@ -220,7 +220,7 @@
 	branch = .
 [submodule "filesystem"]
 	path = libs/filesystem
-	url = git@github.com:boostorg/filesystem.git
+	url = git@github.com:GerHobbelt/filesystem.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "function"]
@@ -735,7 +735,7 @@
 	branch = .
 [submodule "nowide"]
 	path = libs/nowide
-	url = git@github.com:boostorg/nowide.git
+	url = git@github.com:GerHobbelt/nowide.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "docca"]
