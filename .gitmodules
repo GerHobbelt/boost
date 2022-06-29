@@ -220,7 +220,7 @@
 	branch = .
 [submodule "filesystem"]
 	path = libs/filesystem
-	url = git@github.com:GerHobbelt/filesystem.git
+	url = git@github.com:GerHobbelt/boost-filesystem.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "function"]
