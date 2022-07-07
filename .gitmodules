@@ -260,7 +260,7 @@
 	branch = .
 [submodule "iostreams"]
 	path = libs/iostreams
-	url = git@github.com:boostorg/iostreams.git
+	url = git@github.com:GerHobbelt/iostreams.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "multi_index"]
