@@ -13,3 +13,12 @@
 /.settings/
 /.project
 /.pydevproject
+/VS/CMakeFiles/3.24.0/CompilerIdC/Debug/CompilerIdC.tlog/*.tlog
+/VS/CMakeFiles/3.24.0/CompilerIdCXX/Debug/CompilerIdCXX.tlog/*.tlog
+/VS/CMakeFiles/3.24.0/CompilerIdC/Debug/CompilerIdC.tlog/*.lastbuildstate
+/VS/CMakeFiles/3.24.0/CompilerIdCXX/Debug/CompilerIdCXX.tlog/*.lastbuildstate
+/VS/CMakeFiles/3.24.0/x64/Debug/VCTargetsPath.tlog/*.lastbuildstate
+/VS/CMakeFiles/3.24.0/CompilerIdC/Debug/_IsIncrementalBuild
+/VS/CMakeFiles/3.24.0/CompilerIdCXX/Debug/_IsIncrementalBuild
+/VS/CMakeFiles/3.24.0/x64/Debug/_IsIncrementalBuild
+/VS/CMakeFiles/*.check_cache
