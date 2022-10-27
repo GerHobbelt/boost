@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B48CA4E-36E2-3F0F-AE18-B534BEA65384}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\boost\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Git/boost/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTest.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeSystem.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\tools\cmake\include\BoostInstall.cmake;D:\Git\boost\tools\cmake\include\BoostMessage.cmake;D:\Git\boost\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\boost\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Git/boost/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTest.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeSystem.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\tools\cmake\include\BoostInstall.cmake;D:\Git\boost\tools\cmake\include\BoostMessage.cmake;D:\Git\boost\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Git/boost/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTest.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeSystem.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\tools\cmake\include\BoostInstall.cmake;D:\Git\boost\tools\cmake\include\BoostMessage.cmake;D:\Git\boost\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Git/boost/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakePackageConfigHelpers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTest.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CTestUseLaunchers.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\GNUInstallDirs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\WriteBasicConfigVersionFile.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeCXXCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeRCCompiler.cmake;D:\Git\boost\VS\CMakeFiles\3.24.0\CMakeSystem.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\tools\cmake\include\BoostInstall.cmake;D:\Git\boost\tools\cmake\include\BoostMessage.cmake;D:\Git\boost\tools\cmake\include\BoostRoot.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Git\boost\VS\ZERO_CHECK.vcxproj">
+      <Project>{26FD32C9-FDE6-3E8C-A01D-8AAB1ABBEC0B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\atomic\boost_atomic.vcxproj">
+      <Project>{9C81B818-3A6E-3741-9191-CD0DD098B526}</Project>
+      <Name>boost_atomic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\chrono\boost_chrono.vcxproj">
+      <Project>{46A2E0CF-BE3F-309E-9336-A802F2100F25}</Project>
+      <Name>boost_chrono</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\container\boost_container.vcxproj">
+      <Project>{92244D1B-8344-3935-A2FA-1D8B026D35B9}</Project>
+      <Name>boost_container</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\context\boost_context.vcxproj">
+      <Project>{D3E04EBF-D3CB-3F55-B212-ADF69BC5CB49}</Project>
+      <Name>boost_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\contract\boost_contract.vcxproj">
+      <Project>{E39C8422-45BD-366A-A4F7-1BF6B5772C89}</Project>
+      <Name>boost_contract</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\coroutine\boost_coroutine.vcxproj">
+      <Project>{E47D8EB1-E31E-3D91-AEFF-FCE9713D4FE7}</Project>
+      <Name>boost_coroutine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\date_time\boost_date_time.vcxproj">
+      <Project>{DA726B13-1883-36CF-8331-712880CB2CD4}</Project>
+      <Name>boost_date_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\exception\boost_exception.vcxproj">
+      <Project>{866712D1-7088-3C9F-85D0-BA6F0A092DA3}</Project>
+      <Name>boost_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\fiber\boost_fiber.vcxproj">
+      <Project>{588625B9-8723-3F86-8B18-44FE0E4E382C}</Project>
+      <Name>boost_fiber</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\fiber\boost_fiber_numa.vcxproj">
+      <Project>{429A0246-704B-30E7-812E-A8013ADC7233}</Project>
+      <Name>boost_fiber_numa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\filesystem\boost_filesystem.vcxproj">
+      <Project>{93C4DE97-A31F-3AA6-94DB-2586B23A08F0}</Project>
+      <Name>boost_filesystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\graph\boost_graph.vcxproj">
+      <Project>{9F24D1A8-9317-37FC-8E7F-F809CF81E052}</Project>
+      <Name>boost_graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\iostreams\boost_iostreams.vcxproj">
+      <Project>{8E032533-4F97-354E-944B-2EFD3734EDAB}</Project>
+      <Name>boost_iostreams</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\json\boost_json.vcxproj">
+      <Project>{320A98D5-BC66-30C0-99AF-8A8105DCD2D9}</Project>
+      <Name>boost_json</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\locale\boost_locale.vcxproj">
+      <Project>{129A7550-2318-3DF2-A8DC-5C5C30EEE2FF}</Project>
+      <Name>boost_locale</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\log\boost_log.vcxproj">
+      <Project>{3BFB7325-469B-3D06-8279-2EC947C4B5F5}</Project>
+      <Name>boost_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\log\boost_log_setup.vcxproj">
+      <Project>{D543181F-6190-366A-B1C3-477762EB7331}</Project>
+      <Name>boost_log_setup</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\nowide\boost_nowide.vcxproj">
+      <Project>{D693651A-001E-3FC5-A063-9CFBF86EA80A}</Project>
+      <Name>boost_nowide</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\test\boost_prg_exec_monitor.vcxproj">
+      <Project>{1055971C-9613-3AB5-A531-F01208717B23}</Project>
+      <Name>boost_prg_exec_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\program_options\boost_program_options.vcxproj">
+      <Project>{9A7C8922-FB29-3295-9451-A22C992CF5E2}</Project>
+      <Name>boost_program_options</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\random\boost_random.vcxproj">
+      <Project>{FE61F1C7-371A-3E9C-8679-E37BDC3FA50E}</Project>
+      <Name>boost_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\serialization\boost_serialization.vcxproj">
+      <Project>{EFF37FFD-6931-3FE7-9725-9A036FE8CA1F}</Project>
+      <Name>boost_serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\stacktrace\boost_stacktrace_basic.vcxproj">
+      <Project>{BDE94D29-43A7-3D7D-A33E-BDD984B8599F}</Project>
+      <Name>boost_stacktrace_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\stacktrace\boost_stacktrace_noop.vcxproj">
+      <Project>{5DD9F06F-87CF-3F0D-8698-0FE0837782D7}</Project>
+      <Name>boost_stacktrace_noop</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\stacktrace\boost_stacktrace_windbg.vcxproj">
+      <Project>{94D5DE8B-1528-3D76-B8B3-6AB6F82B2580}</Project>
+      <Name>boost_stacktrace_windbg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\stacktrace\boost_stacktrace_windbg_cached.vcxproj">
+      <Project>{7025D757-EC7F-3165-A35D-90A4197BC2D0}</Project>
+      <Name>boost_stacktrace_windbg_cached</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\test\boost_test_exec_monitor.vcxproj">
+      <Project>{717FB245-D82E-307B-8F79-CC02FEE31560}</Project>
+      <Name>boost_test_exec_monitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\thread\boost_thread.vcxproj">
+      <Project>{1E16BF71-9EE0-381E-8859-3AB95C8316D0}</Project>
+      <Name>boost_thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\timer\boost_timer.vcxproj">
+      <Project>{234CAE97-973A-391D-921A-1A54A377FA5C}</Project>
+      <Name>boost_timer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\type_erasure\boost_type_erasure.vcxproj">
+      <Project>{E6450EF1-2E34-3030-91E0-A0B1D4644DBB}</Project>
+      <Name>boost_type_erasure</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\test\boost_unit_test_framework.vcxproj">
+      <Project>{30B672D5-2639-3B96-9D2B-2AAD6647E99F}</Project>
+      <Name>boost_unit_test_framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\wave\boost_wave.vcxproj">
+      <Project>{06BA642E-28C5-357C-92A9-5AB15C2CC790}</Project>
+      <Name>boost_wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\serialization\boost_wserialization.vcxproj">
+      <Project>{A3CA3649-698B-3670-9E6E-A7DCA8B58EE0}</Project>
+      <Name>boost_wserialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\boost\VS\CMakeFiles\74a0c6ae66869aa4b84fda22899493c8\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{C4EBCF1D-5ACB-32B8-8F60-D646F600C1C9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

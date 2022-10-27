@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D543181F-6190-366A-B1C3-477762EB7331}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>boost_log_setup</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\boost\VS\stage\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">boost_log_setup.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libboost_log_setup-vc143-mt-gd-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\stage\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">boost_log_setup.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libboost_log_setup-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\stage\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">boost_log_setup.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libboost_log_setup-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\stage\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">boost_log_setup.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libboost_log_setup-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503;4456;4459;4003</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\Debug\libboost_log_setup-vc143-mt-gd-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4503;4456;4459;4003</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\Release\libboost_log_setup-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4503;4456;4459;4003</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\MinSizeRel\libboost_log_setup-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503;4456;4459;4003</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\RelWithDebInfo\libboost_log_setup-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_LOG_NO_LIB;BOOST_LOG_STATIC_LINK;__STDC_CONSTANT_MACROS;BOOST_SPIRIT_USE_PHOENIX_V3=1;BOOST_THREAD_DONT_USE_CHRONO=1;_SCL_SECURE_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;BOOST_USE_WINDOWS_H;WIN32_LEAN_AND_MEAN;NOMINMAX;SECURITY_WIN32;BOOST_LOG_USE_BOOST_REGEX;BOOST_LOG_WITHOUT_EVENT_LOG;BOOST_LOG_SETUP_BUILDING_THE_LIB;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;BOOST_DATE_TIME_NO_LIB;BOOST_DATE_TIME_STATIC_LINK;BOOST_FILESYSTEM_NO_LIB;BOOST_FILESYSTEM_STATIC_LINK=1;BOOST_ATOMIC_NO_LIB;BOOST_ATOMIC_STATIC_LINK;BOOST_THREAD_NO_LIB;BOOST_THREAD_STATIC_LINK;BOOST_THREAD_USE_LIB;BOOST_CHRONO_NO_LIB;BOOST_CHRONO_STATIC_LINK;BOOST_SERIALIZATION_NO_LIB;BOOST_SERIALIZATION_STATIC_LINK;BOOST_COROUTINE_NO_LIB;BOOST_COROUTINE_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\log\include;D:\Git\boost\libs\log\src;D:\Git\boost\libs\array\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\date_time\include;D:\Git\boost\libs\algorithm\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\exception\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\unordered\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\tokenizer\include;D:\Git\boost\libs\filesystem\include;D:\Git\boost\libs\system\include;D:\Git\boost\libs\variant2\include;D:\Git\boost\libs\parameter\include;D:\Git\boost\libs\phoenix\include;D:\Git\boost\libs\proto\include;D:\Git\boost\libs\atomic\include;D:\Git\boost\libs\thread\include;D:\Git\boost\libs\chrono\include;D:\Git\boost\libs\ratio\include;D:\Git\boost\libs\rational\include;D:\Git\boost\libs\property_tree\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\format\include;D:\Git\boost\libs\multi_index\include;D:\Git\boost\libs\foreach\include;D:\Git\boost\libs\serialization\include;D:\Git\boost\libs\spirit\include;D:\Git\boost\libs\endian\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\variant\include;D:\Git\boost\libs\asio\include;D:\Git\boost\libs\align\include;D:\Git\boost\libs\coroutine\include;D:\Git\boost\libs\context\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\boost\libs\log\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Git/boost/libs/log/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/log/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\libs\log\cmake\BoostLibraryIncludes.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\boost\VS\libs\log\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Git/boost/libs/log/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/log/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\libs\log\cmake\BoostLibraryIncludes.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\libs\log\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Git/boost/libs/log/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/log/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\libs\log\cmake\BoostLibraryIncludes.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\libs\log\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Git/boost/libs/log/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/log/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Tools\CMake\share\cmake-3.24\Modules\CheckCXXSourceCompiles.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckIncludeFileCXX.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\CheckLibraryExists.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageHandleStandardArgs.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindPackageMessage.cmake;C:\Tools\CMake\share\cmake-3.24\Modules\FindThreads.cmake;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;D:\Git\boost\libs\log\cmake\BoostLibraryIncludes.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\libs\log\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Git\boost\libs\log\src\setup\parser_utils.hpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\parser_utils.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\init_from_stream.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\init_from_settings.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\settings_parser.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\filter_parser.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\formatter_parser.cpp" />
+    <ClInclude Include="D:\Git\boost\libs\log\src\setup\default_filter_factory.hpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\default_filter_factory.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\matches_relation_factory.cpp" />
+    <ClInclude Include="D:\Git\boost\libs\log\src\setup\default_formatter_factory.hpp" />
+    <ClCompile Include="D:\Git\boost\libs\log\src\setup\default_formatter_factory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Git\boost\VS\ZERO_CHECK.vcxproj">
+      <Project>{26FD32C9-FDE6-3E8C-A01D-8AAB1ABBEC0B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\atomic\boost_atomic.vcxproj">
+      <Project>{9C81B818-3A6E-3741-9191-CD0DD098B526}</Project>
+      <Name>boost_atomic</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\chrono\boost_chrono.vcxproj">
+      <Project>{46A2E0CF-BE3F-309E-9336-A802F2100F25}</Project>
+      <Name>boost_chrono</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\container\boost_container.vcxproj">
+      <Project>{92244D1B-8344-3935-A2FA-1D8B026D35B9}</Project>
+      <Name>boost_container</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\context\boost_context.vcxproj">
+      <Project>{D3E04EBF-D3CB-3F55-B212-ADF69BC5CB49}</Project>
+      <Name>boost_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\coroutine\boost_coroutine.vcxproj">
+      <Project>{E47D8EB1-E31E-3D91-AEFF-FCE9713D4FE7}</Project>
+      <Name>boost_coroutine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\date_time\boost_date_time.vcxproj">
+      <Project>{DA726B13-1883-36CF-8331-712880CB2CD4}</Project>
+      <Name>boost_date_time</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\exception\boost_exception.vcxproj">
+      <Project>{866712D1-7088-3C9F-85D0-BA6F0A092DA3}</Project>
+      <Name>boost_exception</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\filesystem\boost_filesystem.vcxproj">
+      <Project>{93C4DE97-A31F-3AA6-94DB-2586B23A08F0}</Project>
+      <Name>boost_filesystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\log\boost_log.vcxproj">
+      <Project>{3BFB7325-469B-3D06-8279-2EC947C4B5F5}</Project>
+      <Name>boost_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\random\boost_random.vcxproj">
+      <Project>{FE61F1C7-371A-3E9C-8679-E37BDC3FA50E}</Project>
+      <Name>boost_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\serialization\boost_serialization.vcxproj">
+      <Project>{EFF37FFD-6931-3FE7-9725-9A036FE8CA1F}</Project>
+      <Name>boost_serialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\thread\boost_thread.vcxproj">
+      <Project>{1E16BF71-9EE0-381E-8859-3AB95C8316D0}</Project>
+      <Name>boost_thread</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{588625B9-8723-3F86-8B18-44FE0E4E382C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>boost_fiber</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\boost\VS\stage\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">boost_fiber.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libboost_fiber-vc143-mt-gd-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\stage\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">boost_fiber.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libboost_fiber-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\stage\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">boost_fiber.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libboost_fiber-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\stage\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">boost_fiber.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libboost_fiber-vc143-mt-x64-1_80</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\Debug\libboost_fiber-vc143-mt-gd-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\Release\libboost_fiber-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\MinSizeRel\libboost_fiber-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\RelWithDebInfo\libboost_fiber-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_FIBER_NO_LIB;BOOST_FIBER_SOURCE;BOOST_FIBERS_SOURCE;BOOST_FIBER_STATIC_LINK;BOOST_CONTEXT_NO_LIB;BOOST_CONTEXT_STATIC_LINK;BOOST_CONTEXT_EXPORT=;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Git\boost\libs\fiber\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\context\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\mp11\include;D:\Git\boost\libs\pool\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Git\boost\libs\fiber\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Git/boost/libs/fiber/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/fiber/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Git\boost\VS\libs\fiber\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Git/boost/libs/fiber/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/fiber/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\libs\fiber\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Git/boost/libs/fiber/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/fiber/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\libs\fiber\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Git/boost/libs/fiber/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/fiber/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Tools\CMake\share\cmake-3.24\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\libs\fiber\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\algo\algorithm.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\algo\round_robin.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\algo\shared_work.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\algo\work_stealing.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\barrier.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\condition_variable.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\context.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\fiber.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\future.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\mutex.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\properties.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\recursive_mutex.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\recursive_timed_mutex.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\scheduler.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\timed_mutex.cpp" />
+    <ClCompile Include="D:\Git\boost\libs\fiber\src\waker.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Git\boost\VS\ZERO_CHECK.vcxproj">
+      <Project>{26FD32C9-FDE6-3E8C-A01D-8AAB1ABBEC0B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Git\boost\VS\libs\context\boost_context.vcxproj">
+      <Project>{D3E04EBF-D3CB-3F55-B212-ADF69BC5CB49}</Project>
+      <Name>boost_context</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

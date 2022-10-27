@@ -22,3 +22,9 @@
 /VS/CMakeFiles/3.24.0/CompilerIdCXX/Debug/_IsIncrementalBuild
 /VS/CMakeFiles/3.24.0/x64/Debug/_IsIncrementalBuild
 /VS/CMakeFiles/*.check_cache
+/VS/CMakeFiles/0034073e086133292cb428517ea5480e/*.rule
+/VS/CMakeFiles/005b42e8ca8f08cccbbb4b9ae1e6e00a/*.rule
+*.rule
+*.depend
+generate.stamp.list
+*.stamp
