@@ -28,3 +28,6 @@
 *.depend
 generate.stamp.list
 *.stamp
+*.tlog
+.vs
+Debug
