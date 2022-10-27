@@ -12,14 +12,6 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="MinSizeRel|x64">
-      <Configuration>MinSizeRel</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="RelWithDebInfo|x64">
-      <Configuration>RelWithDebInfo</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9A7C8922-FB29-3295-9451-A22C992CF5E2}</ProjectGuid>
@@ -36,16 +28,6 @@
     <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
@@ -68,14 +50,6 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Build\$(SolutionName)\Projects\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libboost_program_options-vc143-mt-x64-1_80</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Build\$(SolutionName)\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Build\$(SolutionName)\Projects\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libboost_program_options-vc143-mt-x64-1_80</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Build\$(SolutionName)\Bin\$(Configuration)\$(PlatformTarget)\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Build\$(SolutionName)\Projects\$(ProjectName)\$(Configuration)\$(PlatformTarget)\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libboost_program_options-vc143-mt-x64-1_80</TargetName>
-    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -151,79 +125,6 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <Optimization>MinSpace</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
-      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\MinSizeRel\libboost_program_options-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <MASM>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
-      <IncludePaths>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(IncludePaths)</IncludePaths>
-    </MASM>
-    <Midl>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
-    <ClCompile>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <Optimization>MaxSpeed</Optimization>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
-      <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>D:\Git\boost\VS\stage\lib\RelWithDebInfo\libboost_program_options-vc143-mt-x64-1_80.pdb</ProgramDataBaseFileName>
-    </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <MASM>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;BOOST_PROGRAM_OPTIONS_NO_LIB;BOOST_PROGRAM_OPTIONS_STATIC_LINK;BOOST_CONTAINER_NO_LIB;BOOST_CONTAINER_STATIC_LINK;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
-      <IncludePaths>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(IncludePaths)</IncludePaths>
-    </MASM>
-    <Midl>
-      <AdditionalIncludeDirectories>D:\Git\boost\libs\program_options\include;D:\Git\boost\libs\any\include;D:\Git\boost\libs\config\include;D:\Git\boost\libs\core\include;D:\Git\boost\libs\assert\include;D:\Git\boost\libs\static_assert\include;D:\Git\boost\libs\throw_exception\include;D:\Git\boost\libs\type_index\include;D:\Git\boost\libs\container_hash\include;D:\Git\boost\libs\detail\include;D:\Git\boost\libs\preprocessor\include;D:\Git\boost\libs\type_traits\include;D:\Git\boost\libs\integer\include;D:\Git\boost\libs\smart_ptr\include;D:\Git\boost\libs\move\include;D:\Git\boost\libs\function\include;D:\Git\boost\libs\bind\include;D:\Git\boost\libs\typeof\include;D:\Git\boost\libs\iterator\include;D:\Git\boost\libs\concept_check\include;D:\Git\boost\libs\conversion\include;D:\Git\boost\libs\function_types\include;D:\Git\boost\libs\mpl\include;D:\Git\boost\libs\predef\include;D:\Git\boost\libs\utility\include;D:\Git\boost\libs\io\include;D:\Git\boost\libs\fusion\include;D:\Git\boost\libs\tuple\include;D:\Git\boost\libs\optional\include;D:\Git\boost\libs\lexical_cast\include;D:\Git\boost\libs\array\include;D:\Git\boost\libs\container\include;D:\Git\boost\libs\intrusive\include;D:\Git\boost\libs\winapi\include;D:\Git\boost\libs\numeric\conversion\include;D:\Git\boost\libs\range\include;D:\Git\boost\libs\regex\include;D:\Git\boost\libs\tokenizer\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
-    <Lib>
-      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="D:\Git\boost\libs\program_options\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
@@ -253,32 +154,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Git\boost\VS\libs\program_options\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Git/boost/libs/program_options/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/program_options/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Git\boost\VS\libs\program_options\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Git/boost/libs/program_options/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-C:\Tools\CMake\bin\cmake.exe -SD:/Git/boost -BD:/Git/boost/VS --check-stamp-file D:/Git/boost/VS/libs/program_options/CMakeFiles/generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\CMakeFiles\cmake.verify_globs;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Git\boost\VS\libs\program_options\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
