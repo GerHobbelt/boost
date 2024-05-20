@@ -795,36 +795,36 @@
 	branch = .
 [submodule "url"]
 	path = libs/url
-	url = ../url.git
+	url = https://github.com/boostorg/url.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "mysql"]
 	path = libs/mysql
-	url = ../mysql.git
+	url = https://github.com/boostorg/mysql.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "compat"]
 	path = libs/compat
-	url = ../compat.git
+	url = https://github.com/boostorg/compat.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "redis"]
 	path = libs/redis
-	url = ../redis.git
+	url = https://github.com/boostorg/redis.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "cobalt"]
 	path = libs/cobalt
-	url = ../cobalt.git
+	url = https://github.com/boostorg/cobalt.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "charconv"]
 	path = libs/charconv
-	url = ../charconv.git
+	url = https://github.com/boostorg/charconv.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "scope"]
 	path = libs/scope
-	url = ../scope.git
+	url = https://github.com/boostorg/scope.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
