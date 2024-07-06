@@ -27,7 +27,7 @@ jobs:
           tar -cJf ${{ github.ref_name }}-cmake.tar.xz ${{ github.ref_name }}
           sha256sum ${{ github.ref_name }}-cmake.tar.xz > ${{ github.ref_name }}-cmake.tar.xz.txt
 
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.ref_name }}-cmake.tar.gz
@@ -59,7 +59,7 @@ jobs:
           7z a ${{ github.ref_name }}-cmake.7z ${{ github.ref_name }}
           sha256sum ${{ github.ref_name }}-cmake.7z > ${{ github.ref_name }}-cmake.7z.txt
 
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.ref_name }}-cmake.zip
@@ -83,12 +83,13 @@ jobs:
         run: |
           find ${{ github.ref_name }} -name ".git" -prune -exec rm -rf {} +
 
-      - name: Move headers
+      - name: Move headers, remove docs
         shell: bash
         run: |
           cd ${{ github.ref_name }}
           cp -r libs/*/include/boost libs/numeric/*/include/boost .
           rm -rf libs/*/include libs/numeric/*/include
+          rm -rf libs/*/doc libs/numeric/*/doc
           rm -f CMakeLists.txt
 
       - name: Create archives
@@ -98,7 +99,7 @@ jobs:
           tar -cJf ${{ github.ref_name }}-b2-nodocs.tar.xz ${{ github.ref_name }}
           sha256sum ${{ github.ref_name }}-b2-nodocs.tar.xz > ${{ github.ref_name }}-b2-nodocs.tar.xz.txt
 
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.ref_name }}-b2-nodocs.tar.gz
@@ -122,12 +123,13 @@ jobs:
         run: |
           find ${{ github.ref_name }} -name ".git" -prune -exec rm -rf {} +
 
-      - name: Move headers
+      - name: Move headers, remove docs
         shell: bash
         run: |
           cd ${{ github.ref_name }}
           cp -r libs/*/include/boost libs/numeric/*/include/boost .
           rm -rf libs/*/include libs/numeric/*/include
+          rm -rf libs/*/doc libs/numeric/*/doc
           rm -f CMakeLists.txt
 
       - name: Create archives
@@ -138,7 +140,7 @@ jobs:
           7z a ${{ github.ref_name }}-b2-nodocs.7z ${{ github.ref_name }}
           sha256sum ${{ github.ref_name }}-b2-nodocs.7z > ${{ github.ref_name }}-b2-nodocs.7z.txt
 
-      - uses: softprops/action-gh-release@v1
+      - uses: softprops/action-gh-release@v2
         with:
           files: |
             ${{ github.ref_name }}-b2-nodocs.zip
