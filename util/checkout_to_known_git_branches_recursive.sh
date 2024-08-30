@@ -131,7 +131,7 @@ pushd $(dirname $0)                                                            2
 git_repo_checkout_branch "../libs/accumulators"                   9d9e5dae2202660f57e2dc91efb620aa001525b3 master    
 git_repo_checkout_branch "../libs/algorithm"                      32c5a6327cfdca5d41ce0f1d8849b811886daa2f master    
 git_repo_checkout_branch "../libs/align"                          5ad7df63cd792fbdb801d600b93cad1a432f0151 master    
-git_repo_checkout_branch "../libs/any"                            aee53090c04bd0a263480fae25fddddcef54ca82 master    
+git_repo_checkout_branch "../libs/any"                            436e2991f9ad4bb9bbb70b01c688539382197c47 master    
 git_repo_checkout_branch "../libs/array"                          23f6b27c0d9916b9932baac898ae3009817a9153 master    
 git_repo_checkout_branch "../libs/asio"                           c28d453674dd2071fdc8cce5ffabcb54c910f466 master    
 git_repo_checkout_branch "../libs/assert"                         242fdfb1373127331cb229379b50b1dba0f53e49 master    
@@ -154,7 +154,7 @@ git_repo_checkout_branch "../libs/container"                      e08a064896048d
 git_repo_checkout_branch "../libs/container_hash"                 3c9ce69f92d8eacba62d389636ed5da067b3cce5 master    
 git_repo_checkout_branch "../libs/context"                        eda684122269659f3f3c100f4cc83af129d36b91 master    
 git_repo_checkout_branch "../libs/contract"                       eca93d24b5d3bb909ed64c12b5feb5296c5cc070 master    
-git_repo_checkout_branch "../libs/conversion"                     9f285ef0c43c101e49b37bf5e6085e8d635887dc master    
+git_repo_checkout_branch "../libs/conversion"                     8a860e05d0f90d539e3e8710f6924668f1292a76 master    
 git_repo_checkout_branch "../libs/convert"                        0dd7a76b1c051c048b4991b7aa9c8b5aeb5776ee master    
 git_repo_checkout_branch "../libs/core"                           622476533c60b979d0b6a406d601c88219092cdb master    
 git_repo_checkout_branch "../libs/coroutine"                      1e1347c0b1910b9310ec1719edad8b0bf2fd03c8 master    
@@ -162,8 +162,8 @@ git_repo_checkout_branch "../libs/coroutine2"                     d7e1c1c4abcf8c
 git_repo_checkout_branch "../libs/crc"                            13f9200ecacb011ba52bc3b0bea7955634de1499 master    
 git_repo_checkout_branch "../libs/date_time"                      75be56b4c85d8e2dcbc22a1eb251d18cc942fceb master    
 git_repo_checkout_branch "../libs/describe"                       50719b212349f3d1268285c586331584d3dbfeb5 master    
-git_repo_checkout_branch "../libs/detail"                         804767983fb6f77f8e0fd975f23d1facee6f224b master    
-git_repo_checkout_branch "../libs/dll"                            6c60dde50bf67138c90cc84938111866813feaff master    
+git_repo_checkout_branch "../libs/detail"                         a54b2619f8f75861836114d02a3fc70c7c9b3474 master    
+git_repo_checkout_branch "../libs/dll"                            477583869ec304899170728e32ce9f0c5c597af2 master    
 git_repo_checkout_branch "../libs/dynamic_bitset"                 8e20aa1462bf6dcadc338835df529a6d568431b1 master    
 git_repo_checkout_branch "../libs/endian"                         ced7f38d24420723c1abe9d7b19f299b321c5bcf master    
 git_repo_checkout_branch "../libs/exception"                      ece51fe0f7b8273ffc3fa626c3d1442f7af24ef9 master    
