@@ -838,7 +838,7 @@
 	url = https://github.com/boostorg/boostlook.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
-[submodule "tools/boost_unordered_benchmarks"]
+[submodule "boost_unordered_benchmarks"]
 	path = tools/boost_unordered_benchmarks
 	url = https://github.com/GerHobbelt/boost_unordered_benchmarks.git
 	fetchRecurseSubmodules = on-demand
