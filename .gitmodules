@@ -833,3 +833,6 @@
 	url = ../boostlook.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "tools/boost_unordered_benchmarks"]
+	path = tools/boost_unordered_benchmarks
+	url = git@github.com:GerHobbelt/boost_unordered_benchmarks.git
