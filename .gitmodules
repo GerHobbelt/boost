@@ -553,6 +553,11 @@
 	url = https://github.com/boostorg/lockfree.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "sync"]
+	path = libs/sync
+	url = https://github.com/boostorg/sync.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
 [submodule "assert"]
 	path = libs/assert
 	url = https://github.com/boostorg/assert.git
@@ -830,11 +835,11 @@
 	branch = .
 [submodule "boostlook"]
 	path = tools/boostlook
-	url = ../boostlook.git
+	url = https://github.com/boostorg/boostlook.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "tools/boost_unordered_benchmarks"]
 	path = tools/boost_unordered_benchmarks
-	url = git@github.com:GerHobbelt/boost_unordered_benchmarks.git
+	url = https://github.com/GerHobbelt/boost_unordered_benchmarks.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
