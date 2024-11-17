@@ -843,3 +843,8 @@
 	url = https://github.com/GerHobbelt/boost_unordered_benchmarks.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "parser"]
+	path = libs/parser
+	url = ../parser.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
