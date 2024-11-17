@@ -140,7 +140,7 @@
 	branch = .
 [submodule "regex"]
 	path = libs/regex
-	url = https://github.com/boostorg/regex.git
+	url = https://github.com/GerHobbelt/regex.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "crc"]
@@ -385,7 +385,7 @@
 	branch = .
 [submodule "gil"]
 	path = libs/gil
-	url = https://github.com/boostorg/gil.git
+	url = https://github.com/GerHobbelt/gil.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "intrusive"]
@@ -650,7 +650,7 @@
 	branch = .
 [submodule "process"]
 	path = libs/process
-	url = https://github.com/boostorg/process.git
+	url = https://github.com/GerHobbelt/process.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "stacktrace"]
@@ -665,7 +665,7 @@
 	branch = .
 [submodule "beast"]
 	path = libs/beast
-	url = https://github.com/boostorg/beast.git
+	url = https://github.com/GerHobbelt/beast.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "mp11"]
@@ -730,7 +730,7 @@
 	branch = .
 [submodule "histogram"]
 	path = libs/histogram
-	url = https://github.com/boostorg/histogram.git
+	url = https://github.com/GerHobbelt/histogram.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "variant2"]
