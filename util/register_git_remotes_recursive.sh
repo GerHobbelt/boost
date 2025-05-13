@@ -329,7 +329,9 @@ register_remote libs/beast                                                    Es
 register_remote libs/beast                                                    evanlenz                                 git@github.com:evanlenz/beast.git                                                $# $@
 register_remote libs/beast                                                    externpro                                git@github.com:externpro/beast.git                                               $# $@
 register_remote libs/beast                                                    faithandbrave                            git@github.com:faithandbrave/beast.git                                           $# $@
+register_remote libs/beast                                                    Flamefire                                git@github.com:Flamefire/beast.git                                               $# $@
 register_remote libs/beast                                                    fpelliccioni                             git@github.com:fpelliccioni/beast.git                                            $# $@
+register_remote libs/beast                                                    GerHobbelt-original                      git@github.com:GerHobbelt/beast.git                                              $# $@
 register_remote libs/beast                                                    giomasce-throwaway                       git@github.com:giomasce-throwaway/beast.git                                      $# $@
 register_remote libs/beast                                                    grafikrobot                              git@github.com:grafikrobot/boostorg.beast.git                                    $# $@
 register_remote libs/beast                                                    grisumbras                               git@github.com:grisumbras/beast.git                                              $# $@
@@ -527,6 +529,7 @@ register_remote libs/gil                                                      yo
 register_remote libs/graph                                                    boostorg-original                        git@github.com:boostorg/graph.git                                                $# $@
 register_remote libs/graph_parallel                                           boostorg-original                        git@github.com:boostorg/graph_parallel.git                                       $# $@
 register_remote libs/hana                                                     boostorg-original                        git@github.com:boostorg/hana.git                                                 $# $@
+register_remote libs/hash2                                                    boostorg-original                        git@github.com:boostorg/hash2.git                                                $# $@
 register_remote libs/headers                                                  boostorg-original                        git@github.com:boostorg/headers.git                                              $# $@
 register_remote libs/heap                                                     boostorg-original                        git@github.com:boostorg/heap.git                                                 $# $@
 register_remote libs/histogram                                                6a6ay                                    git@github.com:6a6ay/histogram.git                                               $# $@
@@ -609,16 +612,22 @@ register_remote libs/mpl                                                      sm
 register_remote libs/mpl                                                      thomas955                                git@github.com:thomas955/mpl.git                                                 $# $@
 register_remote libs/mpl                                                      tinko92                                  git@github.com:tinko92/mpl.git                                                   $# $@
 register_remote libs/mpl                                                      very-cool-name                           git@github.com:very-cool-name/mpl.git                                            $# $@
+register_remote libs/mqtt5                                                    boostorg-original                        git@github.com:boostorg/mqtt5.git                                                $# $@
 register_remote libs/msm                                                      boostorg-original                        git@github.com:boostorg/msm.git                                                  $# $@
 register_remote libs/multi_array                                              boostorg-original                        git@github.com:boostorg/multi_array.git                                          $# $@
 register_remote libs/multi_index                                              boostorg-original                        git@github.com:boostorg/multi_index.git                                          $# $@
 register_remote libs/multiprecision                                           boostorg-original                        git@github.com:boostorg/multiprecision.git                                       $# $@
 register_remote libs/mysql                                                    boostorg-original                        git@github.com:boostorg/mysql.git                                                $# $@
 register_remote libs/nowide                                                   boostorg-original                        git@github.com:boostorg/nowide.git                                               $# $@
+register_remote libs/numeric/conversion                                       boostorg-original                        git@github.com:boostorg/numeric_conversion.git                                   $# $@
+register_remote libs/numeric/interval                                         boostorg-original                        git@github.com:boostorg/interval.git                                             $# $@
+register_remote libs/numeric/odeint                                           boostorg-original                        git@github.com:boostorg/odeint.git                                               $# $@
+register_remote libs/numeric/ublas                                            boostorg-original                        git@github.com:boostorg/ublas.git                                                $# $@
 register_remote libs/optional                                                 boostorg-original                        git@github.com:boostorg/optional.git                                             $# $@
 register_remote libs/outcome                                                  boostorg-original                        git@github.com:boostorg/outcome.git                                              $# $@
 register_remote libs/parameter                                                boostorg-original                        git@github.com:boostorg/parameter.git                                            $# $@
 register_remote libs/parameter_python                                         boostorg-original                        git@github.com:boostorg/parameter_python.git                                     $# $@
+register_remote libs/parser                                                   boostorg-original                        git@github.com:boostorg/parser.git                                               $# $@
 register_remote libs/pfr                                                      boostorg-original                        git@github.com:boostorg/pfr.git                                                  $# $@
 register_remote libs/phoenix                                                  boostorg-original                        git@github.com:boostorg/phoenix.git                                              $# $@
 register_remote libs/poly_collection                                          boostorg-original                        git@github.com:boostorg/poly_collection.git                                      $# $@
@@ -822,9 +831,23 @@ register_remote libs/wave                                                     bo
 register_remote libs/winapi                                                   boostorg-original                        git@github.com:boostorg/winapi.git                                               $# $@
 register_remote libs/xpressive                                                boostorg-original                        git@github.com:boostorg/xpressive.git                                            $# $@
 register_remote libs/yap                                                      boostorg-original                        git@github.com:boostorg/yap.git                                                  $# $@
+register_remote more                                                          boostorg-original                        git@github.com:boostorg/more.git                                                 $# $@
+register_remote tools/auto_index                                              boostorg-original                        git@github.com:boostorg/auto_index.git                                           $# $@
+register_remote tools/bcp                                                     boostorg-original                        git@github.com:boostorg/bcp.git                                                  $# $@
+register_remote tools/boost_install                                           boostorg-original                        git@github.com:boostorg/boost_install.git                                        $# $@
 register_remote tools/boost_unordered_benchmarks                              boostorg                                 git@github.com:boostorg/boost_unordered_benchmarks.git                           $# $@
 register_remote tools/boost_unordered_benchmarks                              boostorg-original                        git@github.com:boostorg/boost_unordered_benchmarks.git                           $# $@
 register_remote tools/boost_unordered_benchmarks                              GerHobbelt-original                      git@github.com:GerHobbelt/boost_unordered_benchmarks.git                         $# $@
+register_remote tools/boostbook                                               boostorg-original                        git@github.com:boostorg/boostbook.git                                            $# $@
+register_remote tools/boostdep                                                boostorg-original                        git@github.com:boostorg/boostdep.git                                             $# $@
+register_remote tools/boostlook                                               boostorg-original                        git@github.com:boostorg/boostlook.git                                            $# $@
+register_remote tools/build                                                   boostorg-original                        git@github.com:boostorg/build.git                                                $# $@
+register_remote tools/check_build                                             boostorg-original                        git@github.com:boostorg/check_build.git                                          $# $@
+register_remote tools/cmake                                                   boostorg-original                        git@github.com:boostorg/cmake.git                                                $# $@
+register_remote tools/docca                                                   boostorg-original                        git@github.com:boostorg/docca.git                                                $# $@
+register_remote tools/inspect                                                 boostorg-original                        git@github.com:boostorg/inspect.git                                              $# $@
+register_remote tools/litre                                                   boostorg-original                        git@github.com:boostorg/litre.git                                                $# $@
+register_remote tools/quickbook                                               boostorg-original                        git@github.com:boostorg/quickbook.git                                            $# $@
 
 
 

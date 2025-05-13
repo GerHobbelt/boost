@@ -850,11 +850,11 @@
 	branch = .
 [submodule "mqtt5"]
 	path = libs/mqtt5
-	url = ../mqtt5.git
+	url = https://github.com/boostorg/mqtt5.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "hash2"]
 	path = libs/hash2
-	url = ../hash2.git
+	url = https://github.com/boostorg/hash2.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
