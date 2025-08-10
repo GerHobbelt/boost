@@ -858,3 +858,8 @@
 	url = https://github.com/boostorg/hash2.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "bloom"]
+	path = libs/bloom
+	url = ../bloom.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
