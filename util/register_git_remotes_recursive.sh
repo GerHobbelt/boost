@@ -53,7 +53,7 @@ set up git remotes for any / all submodules.
 
 -f       : 'full featured', i.e. refresh all submodule remotes: change their access URIs
            when they have changed.
--D       : DEBUG: print extensive debug / progress information.           
+-D       : DEBUG: print extensive debug / progress information.
 -q       : 'quick', i.e. only register all submodule remotes which have not been
            set up yet.
 
@@ -63,7 +63,7 @@ submodule-paths
          : when you specify one or more submodule directories, than only the
            remotes for those submodules will be set up.
            This is optional; the default sets up the remotes for ALL submodules.
-	   Specify '.' as the path to match ALL submodules.
+       Specify '.' as the path to match ALL submodules.
 
 EOT
   exit
@@ -108,7 +108,7 @@ function register_remote {
             fi
             pushd $path                                                         2> /dev/null   > /dev/null
             if test "$mode" = "f" ; then
-		if [ $debug ] ; then echo "git remote rm $name"; fi
+                if [ $debug ] ; then echo "git remote rm $name"; fi
                 git remote rm $name
             fi
             if [ $debug ] ; then echo "git remote add $name $repo"; fi
@@ -123,20 +123,41 @@ function register_remote {
 
 
 
+
+
+
+
+popd                                                                            2> /dev/null   > /dev/null
 register_remote .                                                             3dots                                    git@github.com:3dots/boost.git                                                   $# $@
+register_remote .                                                             AQUOSTICS                                git@github.com:AQUOSTICS/boost.git                                               $# $@
+register_remote .                                                             BRL-CAD                                  git@github.com:BRL-CAD/boost.git                                                 $# $@
+register_remote .                                                             BigBrain3D                               git@github.com:BigBrain3D/boost.git                                              $# $@
+register_remote .                                                             CyberSys                                 git@github.com:CyberSys/boost.git                                                $# $@
+register_remote .                                                             GerHobbelt                               git@github.com:GerHobbelt/boost.git                                              $# $@
+register_remote .                                                             Gerhobbelt                               git@github.com:Gerhobbelt/boost.git                                              $# $@
+register_remote .                                                             Hexagon-HTC                              git@github.com:Hexagon-HTC/boost.git                                             $# $@
+register_remote .                                                             InfinityOfficialNetwork                  git@github.com:InfinityOfficialNetwork/boostorg-boost.git                        $# $@
+register_remote .                                                             JBT-DSI                                  git@github.com:JBT-DSI/boost_fork.git                                            $# $@
+register_remote .                                                             LadyK-21                                 git@github.com:LadyK-21/boost.git                                                $# $@
+register_remote .                                                             Lastique                                 git@github.com:Lastique/boost.git                                                $# $@
+register_remote .                                                             Mu-L                                     git@github.com:Mu-L/boost.git                                                    $# $@
+register_remote .                                                             Panda3DS-emu                             git@github.com:Panda3DS-emu/ext-boost.git                                        $# $@
+register_remote .                                                             Pandinosaurus                            git@github.com:Pandinosaurus/boost.git                                           $# $@
+register_remote .                                                             QSLee-Net                                git@github.com:QSLee-Net/boost.git                                               $# $@
+register_remote .                                                             SeanTasker                               git@github.com:SeanTasker/boost.git                                              $# $@
+register_remote .                                                             ShuangLiu1992                            git@github.com:ShuangLiu1992/boost.git                                           $# $@
+register_remote .                                                             Siberiawind                              git@github.com:Siberiawind/boost.git                                             $# $@
+register_remote .                                                             SysRay                                   git@github.com:SysRay/boost.git                                                  $# $@
 register_remote .                                                             abitmore                                 git@github.com:abitmore/boost.git                                                $# $@
 register_remote .                                                             alandefreitas                            git@github.com:alandefreitas/boost.git                                           $# $@
 register_remote .                                                             alexandreofbh                            git@github.com:alexandreofbh/boost.git                                           $# $@
-register_remote .                                                             AQUOSTICS                                git@github.com:AQUOSTICS/boost.git                                               $# $@
 register_remote .                                                             arancepete                               git@github.com:arancepete/boost.git                                              $# $@
 register_remote .                                                             auperatech                               git@github.com:auperatech/boost_aupera.git                                       $# $@
 register_remote .                                                             bambooyu                                 git@github.com:bambooyu/boost.git                                                $# $@
-register_remote .                                                             BigBrain3D                               git@github.com:BigBrain3D/boost.git                                              $# $@
 register_remote .                                                             bluezoosoftware-third-party-boostorg     git@github.com:bluezoosoftware-third-party-boostorg/boost.git                    $# $@
 register_remote .                                                             boostorg                                 git@github.com:boostorg/boost.git                                                $# $@
 register_remote .                                                             boostorg-original                        git@github.com:boostorg/boost.git                                                $# $@
 register_remote .                                                             boris-fx                                 git@github.com:boris-fx/mocha-boost.git                                          $# $@
-register_remote .                                                             BRL-CAD                                  git@github.com:BRL-CAD/boost.git                                                 $# $@
 register_remote .                                                             bveldhoen                                git@github.com:bveldhoen/boost.git                                               $# $@
 register_remote .                                                             calinteodorescu                          git@github.com:calinteodorescu/boost.git                                         $# $@
 register_remote .                                                             chachoi                                  git@github.com:chachoi/boost.git                                                 $# $@
@@ -146,50 +167,34 @@ register_remote .                                                             cp
 register_remote .                                                             crossbuild                               git@github.com:crossbuild/boost.git                                              $# $@
 register_remote .                                                             crunchytech                              git@github.com:crunchytech/boost.git                                             $# $@
 register_remote .                                                             cucbin                                   git@github.com:cucbin/boost.git                                                  $# $@
-register_remote .                                                             CyberSys                                 git@github.com:CyberSys/boost.git                                                $# $@
 register_remote .                                                             frordX                                   git@github.com:frordX/boost.git                                                  $# $@
-register_remote .                                                             GerHobbelt                               git@github.com:GerHobbelt/boost.git                                              $# $@
-register_remote .                                                             Gerhobbelt                               git@github.com:Gerhobbelt/boost.git                                              $# $@
 register_remote .                                                             gnostr-org                               git@github.com:gnostr-org/boost_1_82_0.git                                       $# $@
 register_remote .                                                             grafikrobot                              git@github.com:grafikrobot/boostorg.boost.git                                    $# $@
 register_remote .                                                             hellcwang                                git@github.com:hellcwang/boost.git                                               $# $@
-register_remote .                                                             Hexagon-HTC                              git@github.com:Hexagon-HTC/boost.git                                             $# $@
 register_remote .                                                             ianymchen                                git@github.com:ianymchen/boost.git                                               $# $@
 register_remote .                                                             ictus4u                                  git@github.com:ictus4u/boost.git                                                 $# $@
-register_remote .                                                             InfinityOfficialNetwork                  git@github.com:InfinityOfficialNetwork/boostorg-boost.git                        $# $@
 register_remote .                                                             irods                                    git@github.com:irods/boost.git                                                   $# $@
 register_remote .                                                             ishandutta2007                           git@github.com:ishandutta2007/boost.git                                          $# $@
-register_remote .                                                             JBT-DSI                                  git@github.com:JBT-DSI/boost_fork.git                                            $# $@
 register_remote .                                                             jingliang2005                            git@github.com:jingliang2005/boost.git                                           $# $@
 register_remote .                                                             kkpan11                                  git@github.com:kkpan11/boost.git                                                 $# $@
-register_remote .                                                             LadyK-21                                 git@github.com:LadyK-21/boost.git                                                $# $@
-register_remote .                                                             Lastique                                 git@github.com:Lastique/boost.git                                                $# $@
 register_remote .                                                             makesoftwaresafe                         git@github.com:makesoftwaresafe/boost.git                                        $# $@
 register_remote .                                                             mikehcox-third-party                     git@github.com:mikehcox-third-party/boostorg-boost.git                           $# $@
 register_remote .                                                             mlliarm                                  git@github.com:mlliarm/boost.git                                                 $# $@
 register_remote .                                                             mongodb-forks                            git@github.com:mongodb-forks/boost.git                                           $# $@
 register_remote .                                                             mscppppppppp                             git@github.com:mscppppppppp/boost.git                                            $# $@
-register_remote .                                                             Mu-L                                     git@github.com:Mu-L/boost.git                                                    $# $@
 register_remote .                                                             murdoa                                   git@github.com:murdoa/boost.git                                                  $# $@
 register_remote .                                                             ofenloch                                 git@github.com:ofenloch/boost.git                                                $# $@
-register_remote .                                                             Panda3DS-emu                             git@github.com:Panda3DS-emu/ext-boost.git                                        $# $@
-register_remote .                                                             Pandinosaurus                            git@github.com:Pandinosaurus/boost.git                                           $# $@
 register_remote .                                                             pnacht                                   git@github.com:pnacht/boost.git                                                  $# $@
-register_remote .                                                             QSLee-Net                                git@github.com:QSLee-Net/boost.git                                               $# $@
 register_remote .                                                             rogii-com                                git@github.com:rogii-com/boost.git                                               $# $@
 register_remote .                                                             rrajgh                                   git@github.com:rrajgh/boost.git                                                  $# $@
 register_remote .                                                             salym                                    git@github.com:salym/boost.git                                                   $# $@
 register_remote .                                                             samd2                                    git@github.com:samd2/boost.git                                                   $# $@
 register_remote .                                                             sarvex                                   git@github.com:sarvex/boost.git                                                  $# $@
 register_remote .                                                             sdarwin                                  git@github.com:sdarwin/boost.git                                                 $# $@
-register_remote .                                                             SeanTasker                               git@github.com:SeanTasker/boost.git                                              $# $@
-register_remote .                                                             ShuangLiu1992                            git@github.com:ShuangLiu1992/boost.git                                           $# $@
-register_remote .                                                             Siberiawind                              git@github.com:Siberiawind/boost.git                                             $# $@
 register_remote .                                                             simbahebinbo                             git@github.com:simbahebinbo/boost.git                                            $# $@
 register_remote .                                                             skn123                                   git@github.com:skn123/boost.git                                                  $# $@
 register_remote .                                                             sycomix                                  git@github.com:sycomix/boost.git                                                 $# $@
 register_remote .                                                             sysfce2                                  git@github.com:sysfce2/boost.git                                                 $# $@
-register_remote .                                                             SysRay                                   git@github.com:SysRay/boost.git                                                  $# $@
 register_remote .                                                             tannerdsilva                             git@github.com:tannerdsilva/boost.git                                            $# $@
 register_remote .                                                             timeester3648                            git@github.com:timeester3648/MultiEngine-Boost.git                               $# $@
 register_remote .                                                             tinhto-000                               git@github.com:tinhto-000/boost.git                                              $# $@
@@ -210,10 +215,28 @@ register_remote libs/any                                                      bo
 register_remote libs/any                                                      boostorg-original                        git@github.com:boostorg/any.git                                                  $# $@
 register_remote libs/array                                                    boostorg                                 git@github.com:boostorg/array.git                                                $# $@
 register_remote libs/array                                                    boostorg-original                        git@github.com:boostorg/array.git                                                $# $@
+register_remote libs/asio                                                     AraHaan                                  git@github.com:AraHaan/asio.git                                                  $# $@
+register_remote libs/asio                                                     ClausKlein                               git@github.com:ClausKlein/asio.git                                               $# $@
+register_remote libs/asio                                                     CognexVisionSoftware                     git@github.com:CognexVisionSoftware/asio.git                                     $# $@
+register_remote libs/asio                                                     EEDY                                     git@github.com:EEDY/asio.git                                                     $# $@
+register_remote libs/asio                                                     EvinceMoi                                git@github.com:EvinceMoi/asio.git                                                $# $@
+register_remote libs/asio                                                     FairRootGroup                            git@github.com:FairRootGroup/asio.git                                            $# $@
+register_remote libs/asio                                                     HMGrunthos                               git@github.com:HMGrunthos/asio.git                                               $# $@
+register_remote libs/asio                                                     Independa                                git@github.com:Independa/asio.git                                                $# $@
+register_remote libs/asio                                                     LeHuman                                  git@github.com:LeHuman/asio.git                                                  $# $@
+register_remote libs/asio                                                     MarcelRaad                               git@github.com:MarcelRaad/asio.git                                               $# $@
+register_remote libs/asio                                                     MoonCollider                             git@github.com:MoonCollider/asio.git                                             $# $@
+register_remote libs/asio                                                     Mu-L                                     git@github.com:Mu-L/asio.git                                                     $# $@
+register_remote libs/asio                                                     Osse                                     git@github.com:Osse/asio.git                                                     $# $@
+register_remote libs/asio                                                     SammyEnigma                              git@github.com:SammyEnigma/asio-1.git                                            $# $@
+register_remote libs/asio                                                     SpriteOvO                                git@github.com:SpriteOvO/asio.git                                                $# $@
+register_remote libs/asio                                                     StephenCWills                            git@github.com:StephenCWills/asio.git                                            $# $@
+register_remote libs/asio                                                     TecStylos                                git@github.com:TecStylos/asio.git                                                $# $@
+register_remote libs/asio                                                     Wenir                                    git@github.com:Wenir/asio.git                                                    $# $@
+register_remote libs/asio                                                     ZerocksX                                 git@github.com:ZerocksX/asio.git                                                 $# $@
 register_remote libs/asio                                                     aboseley                                 git@github.com:aboseley/asio.git                                                 $# $@
 register_remote libs/asio                                                     amayesingnathan                          git@github.com:amayesingnathan/asio.git                                          $# $@
 register_remote libs/asio                                                     andrei-datcu                             git@github.com:andrei-datcu/asio.git                                             $# $@
-register_remote libs/asio                                                     AraHaan                                  git@github.com:AraHaan/asio.git                                                  $# $@
 register_remote libs/asio                                                     bbarwik                                  git@github.com:bbarwik/asio.git                                                  $# $@
 register_remote libs/asio                                                     benkuper                                 git@github.com:benkuper/asio.git                                                 $# $@
 register_remote libs/asio                                                     boostorg                                 git@github.com:boostorg/asio.git                                                 $# $@
@@ -222,8 +245,6 @@ register_remote libs/asio                                                     ca
 register_remote libs/asio                                                     cho-regin                                git@github.com:cho-regin/asio.git                                                $# $@
 register_remote libs/asio                                                     chriskohlhoff                            git@github.com:chriskohlhoff/asio.git                                            $# $@
 register_remote libs/asio                                                     classicvalues                            git@github.com:classicvalues/asio.git                                            $# $@
-register_remote libs/asio                                                     ClausKlein                               git@github.com:ClausKlein/asio.git                                               $# $@
-register_remote libs/asio                                                     CognexVisionSoftware                     git@github.com:CognexVisionSoftware/asio.git                                     $# $@
 register_remote libs/asio                                                     cpp-pm                                   git@github.com:cpp-pm/asio.git                                                   $# $@
 register_remote libs/asio                                                     daniel-mdb                               git@github.com:daniel-mdb/asio.git                                               $# $@
 register_remote libs/asio                                                     danra                                    git@github.com:danra/asio.git                                                    $# $@
@@ -231,22 +252,17 @@ register_remote libs/asio                                                     da
 register_remote libs/asio                                                     de-vri-es                                git@github.com:de-vri-es/asio.git                                                $# $@
 register_remote libs/asio                                                     dgarske                                  git@github.com:dgarske/asio.git                                                  $# $@
 register_remote libs/asio                                                     diasurgical                              git@github.com:diasurgical/asio.git                                              $# $@
+register_remote libs/asio                                                     eProsima                                 git@github.com:eProsima/asio.git                                                 $# $@
 register_remote libs/asio                                                     ecatmur                                  git@github.com:ecatmur/asio-1.git                                                $# $@
-register_remote libs/asio                                                     EEDY                                     git@github.com:EEDY/asio.git                                                     $# $@
 register_remote libs/asio                                                     ela-compil                               git@github.com:ela-compil/asio.git                                               $# $@
 register_remote libs/asio                                                     encode-ro                                git@github.com:encode-ro/asio.git                                                $# $@
-register_remote libs/asio                                                     eProsima                                 git@github.com:eProsima/asio.git                                                 $# $@
-register_remote libs/asio                                                     EvinceMoi                                git@github.com:EvinceMoi/asio.git                                                $# $@
 register_remote libs/asio                                                     exief                                    git@github.com:exief/asio-1.git                                                  $# $@
-register_remote libs/asio                                                     FairRootGroup                            git@github.com:FairRootGroup/asio.git                                            $# $@
 register_remote libs/asio                                                     faizol                                   git@github.com:faizol/asio.git                                                   $# $@
 register_remote libs/asio                                                     fengjixuchui                             git@github.com:fengjixuchui/asio.git                                             $# $@
 register_remote libs/asio                                                     flichtenheld                             git@github.com:flichtenheld/asio.git                                             $# $@
 register_remote libs/asio                                                     gamefunc                                 git@github.com:gamefunc/asio.git                                                 $# $@
 register_remote libs/asio                                                     gjasny                                   git@github.com:gjasny/asio-1.git                                                 $# $@
 register_remote libs/asio                                                     gummif                                   git@github.com:gummif/asio.git                                                   $# $@
-register_remote libs/asio                                                     HMGrunthos                               git@github.com:HMGrunthos/asio.git                                               $# $@
-register_remote libs/asio                                                     Independa                                git@github.com:Independa/asio.git                                                $# $@
 register_remote libs/asio                                                     iPlon-org                                git@github.com:iPlon-org/asio.git                                                $# $@
 register_remote libs/asio                                                     isabella232                              git@github.com:isabella232/asio.git                                              $# $@
 register_remote libs/asio                                                     isage                                    git@github.com:isage/asio.git                                                    $# $@
@@ -255,40 +271,29 @@ register_remote libs/asio                                                     jc
 register_remote libs/asio                                                     jwt27                                    git@github.com:jwt27/asio.git                                                    $# $@
 register_remote libs/asio                                                     kashirin-alex                            git@github.com:kashirin-alex/asio.git                                            $# $@
 register_remote libs/asio                                                     klemens-morgenstern                      git@github.com:klemens-morgenstern/asio.git                                      $# $@
-register_remote libs/asio                                                     LeHuman                                  git@github.com:LeHuman/asio.git                                                  $# $@
 register_remote libs/asio                                                     mabrarov                                 git@github.com:mabrarov/asio-1.git                                               $# $@
-register_remote libs/asio                                                     MarcelRaad                               git@github.com:MarcelRaad/asio.git                                               $# $@
 register_remote libs/asio                                                     michalwlo                                git@github.com:michalwlo/asio.git                                                $# $@
 register_remote libs/asio                                                     mkurdej                                  git@github.com:mkurdej/asio.git                                                  $# $@
-register_remote libs/asio                                                     MoonCollider                             git@github.com:MoonCollider/asio.git                                             $# $@
 register_remote libs/asio                                                     moontrade                                git@github.com:moontrade/asio.git                                                $# $@
 register_remote libs/asio                                                     moskvanaft                               git@github.com:moskvanaft/asio.git                                               $# $@
-register_remote libs/asio                                                     Mu-L                                     git@github.com:Mu-L/asio.git                                                     $# $@
 register_remote libs/asio                                                     nomis                                    git@github.com:nomis/asio-1.git                                                  $# $@
 register_remote libs/asio                                                     oceancx                                  git@github.com:oceancx/asio.git                                                  $# $@
-register_remote libs/asio                                                     Osse                                     git@github.com:Osse/asio.git                                                     $# $@
 register_remote libs/asio                                                     phprus                                   git@github.com:phprus/asio.git                                                   $# $@
 register_remote libs/asio                                                     poor-circle                              git@github.com:poor-circle/asio.git                                              $# $@
 register_remote libs/asio                                                     pthis                                    git@github.com:pthis/asio.git                                                    $# $@
 register_remote libs/asio                                                     reddwarf69                               git@github.com:reddwarf69/asio-1.git                                             $# $@
-register_remote libs/asio                                                     SammyEnigma                              git@github.com:SammyEnigma/asio-1.git                                            $# $@
 register_remote libs/asio                                                     smurfix                                  git@github.com:smurfix/esp-idf-asio.git                                          $# $@
-register_remote libs/asio                                                     SpriteOvO                                git@github.com:SpriteOvO/asio.git                                                $# $@
 register_remote libs/asio                                                     steezer                                  git@github.com:steezer/asio.git                                                  $# $@
-register_remote libs/asio                                                     StephenCWills                            git@github.com:StephenCWills/asio.git                                            $# $@
 register_remote libs/asio                                                     stephenwhittle                           git@github.com:stephenwhittle/asio.git                                           $# $@
 register_remote libs/asio                                                     sthagen                                  git@github.com:sthagen/chriskohlhoff-asio.git                                    $# $@
 register_remote libs/asio                                                     swex                                     git@github.com:swex/asio.git                                                     $# $@
 register_remote libs/asio                                                     tanzislam                                git@github.com:tanzislam/asio-1.git                                              $# $@
-register_remote libs/asio                                                     TecStylos                                git@github.com:TecStylos/asio.git                                                $# $@
 register_remote libs/asio                                                     tkoecker                                 git@github.com:tkoecker/asio.git                                                 $# $@
 register_remote libs/asio                                                     tsungchent                               git@github.com:tsungchent/asio.git                                               $# $@
 register_remote libs/asio                                                     tusikalanse                              git@github.com:tusikalanse/asio.git                                              $# $@
 register_remote libs/asio                                                     vinipsmaker                              git@github.com:vinipsmaker/asio.git                                              $# $@
 register_remote libs/asio                                                     voidanix                                 git@github.com:voidanix/asio.git                                                 $# $@
 register_remote libs/asio                                                     wcy168                                   git@github.com:wcy168/asio.git                                                   $# $@
-register_remote libs/asio                                                     Wenir                                    git@github.com:Wenir/asio.git                                                    $# $@
-register_remote libs/asio                                                     ZerocksX                                 git@github.com:ZerocksX/asio.git                                                 $# $@
 register_remote libs/assert                                                   boostorg                                 git@github.com:boostorg/assert.git                                               $# $@
 register_remote libs/assert                                                   boostorg-original                        git@github.com:boostorg/assert.git                                               $# $@
 register_remote libs/assign                                                   boostorg                                 git@github.com:boostorg/assign.git                                               $# $@
@@ -298,37 +303,44 @@ register_remote libs/atomic                                                   bo
 register_remote libs/beast                                                    0xFEEDC0DE64                             git@github.com:0xFEEDC0DE64/boost_beast.git                                      $# $@
 register_remote libs/beast                                                    101glover                                git@github.com:101glover/beast.git                                               $# $@
 register_remote libs/beast                                                    AeroStun                                 git@github.com:AeroStun/beast.git                                                $# $@
+register_remote libs/beast                                                    Anefu                                    git@github.com:Anefu/beast.git                                                   $# $@
+register_remote libs/beast                                                    BrianWeed                                git@github.com:BrianWeed/beast.git                                               $# $@
+register_remote libs/beast                                                    CyberFlameGO                             git@github.com:CyberFlameGO/beast.git                                            $# $@
+register_remote libs/beast                                                    Eshnek                                   git@github.com:Eshnek/beast.git                                                  $# $@
+register_remote libs/beast                                                    Flamefire                                git@github.com:Flamefire/beast.git                                               $# $@
+register_remote libs/beast                                                    GerHobbelt-original                      git@github.com:GerHobbelt/beast.git                                              $# $@
+register_remote libs/beast                                                    Jackarain                                git@github.com:Jackarain/beast.git                                               $# $@
+register_remote libs/beast                                                    JackyYin                                 git@github.com:JackyYin/beast.git                                                $# $@
+register_remote libs/beast                                                    Mu-L                                     git@github.com:Mu-L/beast.git                                                    $# $@
+register_remote libs/beast                                                    RicardoCapurro                           git@github.com:RicardoCapurro/beast.git                                          $# $@
+register_remote libs/beast                                                    SamKnows                                 git@github.com:SamKnows/beast.git                                                $# $@
+register_remote libs/beast                                                    ShuangLiu1992                            git@github.com:ShuangLiu1992/beast.git                                           $# $@
+register_remote libs/beast                                                    ShukantPal                               git@github.com:ShukantPal/beast.git                                              $# $@
 register_remote libs/beast                                                    alandefreitas                            git@github.com:alandefreitas/beast.git                                           $# $@
 register_remote libs/beast                                                    amarin15                                 git@github.com:amarin15/beast.git                                                $# $@
-register_remote libs/beast                                                    Anefu                                    git@github.com:Anefu/beast.git                                                   $# $@
 register_remote libs/beast                                                    anoo1                                    git@github.com:anoo1/beast.git                                                   $# $@
 register_remote libs/beast                                                    ashtum                                   git@github.com:ashtum/beast.git                                                  $# $@
 register_remote libs/beast                                                    bazelboost                               git@github.com:bazelboost/beast.git                                              $# $@
 register_remote libs/beast                                                    bc-lee                                   git@github.com:bc-lee/beast.git                                                  $# $@
 register_remote libs/beast                                                    boostorg                                 git@github.com:boostorg/beast.git                                                $# $@
 register_remote libs/beast                                                    boostorg-original                        git@github.com:boostorg/beast.git                                                $# $@
-register_remote libs/beast                                                    BrianWeed                                git@github.com:BrianWeed/beast.git                                               $# $@
 register_remote libs/beast                                                    britasys                                 git@github.com:britasys/beast.git                                                $# $@
 register_remote libs/beast                                                    cbodley                                  git@github.com:cbodley/Beast.git                                                 $# $@
 register_remote libs/beast                                                    chreniuc                                 git@github.com:chreniuc/beast.git                                                $# $@
 register_remote libs/beast                                                    chriskohlhoff                            git@github.com:chriskohlhoff/Beast.git                                           $# $@
 register_remote libs/beast                                                    classicvalues                            git@github.com:classicvalues/beast.git                                           $# $@
 register_remote libs/beast                                                    cmazakas                                 git@github.com:cmazakas/beast.git                                                $# $@
-register_remote libs/beast                                                    CyberFlameGO                             git@github.com:CyberFlameGO/beast.git                                            $# $@
-register_remote libs/beast                                                    dendisuhubdy                             git@github.com:dendisuhubdy/beast.git                                            $# $@
 register_remote libs/beast                                                    deW1                                     git@github.com:deW1/beast.git                                                    $# $@
+register_remote libs/beast                                                    dendisuhubdy                             git@github.com:dendisuhubdy/beast.git                                            $# $@
 register_remote libs/beast                                                    djarek                                   git@github.com:djarek/beast.git                                                  $# $@
 register_remote libs/beast                                                    dmorilha-twilio                          git@github.com:dmorilha-twilio/beast.git                                         $# $@
 register_remote libs/beast                                                    ecatmur                                  git@github.com:ecatmur/beast.git                                                 $# $@
 register_remote libs/beast                                                    ednolan                                  git@github.com:ednolan/beast.git                                                 $# $@
 register_remote libs/beast                                                    edtanous                                 git@github.com:edtanous/beast.git                                                $# $@
-register_remote libs/beast                                                    Eshnek                                   git@github.com:Eshnek/beast.git                                                  $# $@
 register_remote libs/beast                                                    evanlenz                                 git@github.com:evanlenz/beast.git                                                $# $@
 register_remote libs/beast                                                    externpro                                git@github.com:externpro/beast.git                                               $# $@
 register_remote libs/beast                                                    faithandbrave                            git@github.com:faithandbrave/beast.git                                           $# $@
-register_remote libs/beast                                                    Flamefire                                git@github.com:Flamefire/beast.git                                               $# $@
 register_remote libs/beast                                                    fpelliccioni                             git@github.com:fpelliccioni/beast.git                                            $# $@
-register_remote libs/beast                                                    GerHobbelt-original                      git@github.com:GerHobbelt/beast.git                                              $# $@
 register_remote libs/beast                                                    giomasce-throwaway                       git@github.com:giomasce-throwaway/beast.git                                      $# $@
 register_remote libs/beast                                                    grafikrobot                              git@github.com:grafikrobot/boostorg.beast.git                                    $# $@
 register_remote libs/beast                                                    grisumbras                               git@github.com:grisumbras/beast.git                                              $# $@
@@ -336,8 +348,6 @@ register_remote libs/beast                                                    gu
 register_remote libs/beast                                                    ho-229                                   git@github.com:ho-229/beast.git                                                  $# $@
 register_remote libs/beast                                                    inetic                                   git@github.com:inetic/beast.git                                                  $# $@
 register_remote libs/beast                                                    isabella232                              git@github.com:isabella232/Beast.git                                             $# $@
-register_remote libs/beast                                                    Jackarain                                git@github.com:Jackarain/beast.git                                               $# $@
-register_remote libs/beast                                                    JackyYin                                 git@github.com:JackyYin/beast.git                                                $# $@
 register_remote libs/beast                                                    jeremiahar                               git@github.com:jeremiahar/beast.git                                              $# $@
 register_remote libs/beast                                                    johannesparty                            git@github.com:johannesparty/beast.git                                           $# $@
 register_remote libs/beast                                                    jolting                                  git@github.com:jolting/beast.git                                                 $# $@
@@ -351,7 +361,6 @@ register_remote libs/beast                                                    mi
 register_remote libs/beast                                                    mika-fischer                             git@github.com:mika-fischer/beast.git                                            $# $@
 register_remote libs/beast                                                    mrAsadi                                  git@github.com:mrAsadi/beast.git                                                 $# $@
 register_remote libs/beast                                                    msuvajac                                 git@github.com:msuvajac/beast.git                                                $# $@
-register_remote libs/beast                                                    Mu-L                                     git@github.com:Mu-L/beast.git                                                    $# $@
 register_remote libs/beast                                                    nbougalis                                git@github.com:nbougalis/beast.git                                               $# $@
 register_remote libs/beast                                                    nevilad                                  git@github.com:nevilad/beast.git                                                 $# $@
 register_remote libs/beast                                                    oerol                                    git@github.com:oerol/beast.git                                                   $# $@
@@ -360,15 +369,11 @@ register_remote libs/beast                                                    pa
 register_remote libs/beast                                                    petrepircalabu                           git@github.com:petrepircalabu/beast.git                                          $# $@
 register_remote libs/beast                                                    pyrist                                   git@github.com:pyrist/beast.git                                                  $# $@
 register_remote libs/beast                                                    reddwarf69                               git@github.com:reddwarf69/beast.git                                              $# $@
-register_remote libs/beast                                                    RicardoCapurro                           git@github.com:RicardoCapurro/beast.git                                          $# $@
 register_remote libs/beast                                                    samd2                                    git@github.com:samd2/beast.git                                                   $# $@
 register_remote libs/beast                                                    sameer-here                              git@github.com:sameer-here/beast.git                                             $# $@
-register_remote libs/beast                                                    SamKnows                                 git@github.com:SamKnows/beast.git                                                $# $@
 register_remote libs/beast                                                    schvarcz                                 git@github.com:schvarcz/beast.git                                                $# $@
 register_remote libs/beast                                                    sdarwin                                  git@github.com:sdarwin/beast.git                                                 $# $@
 register_remote libs/beast                                                    sehe                                     git@github.com:sehe/beast.git                                                    $# $@
-register_remote libs/beast                                                    ShuangLiu1992                            git@github.com:ShuangLiu1992/beast.git                                           $# $@
-register_remote libs/beast                                                    ShukantPal                               git@github.com:ShukantPal/beast.git                                              $# $@
 register_remote libs/beast                                                    sibman                                   git@github.com:sibman/beast.git                                                  $# $@
 register_remote libs/beast                                                    slowriot                                 git@github.com:slowriot/beast.git                                                $# $@
 register_remote libs/beast                                                    swex                                     git@github.com:swex/beast.git                                                    $# $@
@@ -392,12 +397,20 @@ register_remote libs/compat                                                   bo
 register_remote libs/compatibility                                            boostorg-original                        git@github.com:boostorg/compatibility.git                                        $# $@
 register_remote libs/compute                                                  boostorg-original                        git@github.com:boostorg/compute.git                                              $# $@
 register_remote libs/concept_check                                            boostorg-original                        git@github.com:boostorg/concept_check.git                                        $# $@
+register_remote libs/config                                                   Belcourt                                 git@github.com:Belcourt/config.git                                               $# $@
+register_remote libs/config                                                   Beman                                    git@github.com:Beman/config.git                                                  $# $@
+register_remote libs/config                                                   DanielaE                                 git@github.com:DanielaE/boost.config.git                                         $# $@
+register_remote libs/config                                                   Elzair                                   git@github.com:Elzair/config.git                                                 $# $@
+register_remote libs/config                                                   FlyGoat                                  git@github.com:FlyGoat/config.git                                                $# $@
+register_remote libs/config                                                   KindDragon                               git@github.com:KindDragon/config.git                                             $# $@
+register_remote libs/config                                                   Kojoley                                  git@github.com:Kojoley/config.git                                                $# $@
+register_remote libs/config                                                   Malterlib                                git@github.com:Malterlib/boost_config.git                                        $# $@
+register_remote libs/config                                                   MarcelRaad                               git@github.com:MarcelRaad/config.git                                             $# $@
+register_remote libs/config                                                   NilFoundation                            git@github.com:NilFoundation/config.git                                          $# $@
 register_remote libs/config                                                   akumta                                   git@github.com:akumta/config.git                                                 $# $@
 register_remote libs/config                                                   apiaryio                                 git@github.com:apiaryio/boost-config.git                                         $# $@
 register_remote libs/config                                                   automeka                                 git@github.com:automeka/boost_config.git                                         $# $@
 register_remote libs/config                                                   bazelboost                               git@github.com:bazelboost/config.git                                             $# $@
-register_remote libs/config                                                   Belcourt                                 git@github.com:Belcourt/config.git                                               $# $@
-register_remote libs/config                                                   Beman                                    git@github.com:Beman/config.git                                                  $# $@
 register_remote libs/config                                                   boostandroid                             git@github.com:boostandroid/config.git                                           $# $@
 register_remote libs/config                                                   boostorg                                 git@github.com:boostorg/config.git                                               $# $@
 register_remote libs/config                                                   boostorg-original                        git@github.com:boostorg/config.git                                               $# $@
@@ -405,19 +418,11 @@ register_remote libs/config                                                   br
 register_remote libs/config                                                   buckaroo-pm                              git@github.com:buckaroo-pm/boost-config.git                                      $# $@
 register_remote libs/config                                                   buckaroo-upgrade-bot                     git@github.com:buckaroo-upgrade-bot/boost-config.git                             $# $@
 register_remote libs/config                                                   crossbuild                               git@github.com:crossbuild/boost-config.git                                       $# $@
-register_remote libs/config                                                   DanielaE                                 git@github.com:DanielaE/boost.config.git                                         $# $@
 register_remote libs/config                                                   dmenendez-gruposantander                 git@github.com:dmenendez-gruposantander/config.git                               $# $@
-register_remote libs/config                                                   Elzair                                   git@github.com:Elzair/config.git                                                 $# $@
 register_remote libs/config                                                   externpro                                git@github.com:externpro/config.git                                              $# $@
-register_remote libs/config                                                   FlyGoat                                  git@github.com:FlyGoat/config.git                                                $# $@
 register_remote libs/config                                                   jessicah                                 git@github.com:jessicah/boost-config.git                                         $# $@
-register_remote libs/config                                                   KindDragon                               git@github.com:KindDragon/config.git                                             $# $@
-register_remote libs/config                                                   Kojoley                                  git@github.com:Kojoley/config.git                                                $# $@
-register_remote libs/config                                                   Malterlib                                git@github.com:Malterlib/boost_config.git                                        $# $@
-register_remote libs/config                                                   MarcelRaad                               git@github.com:MarcelRaad/config.git                                             $# $@
 register_remote libs/config                                                   microsoftarchive                         git@github.com:microsoftarchive/config.git                                       $# $@
 register_remote libs/config                                                   morinmorin                               git@github.com:morinmorin/config.git                                             $# $@
-register_remote libs/config                                                   NilFoundation                            git@github.com:NilFoundation/config.git                                          $# $@
 register_remote libs/config                                                   njlr                                     git@github.com:njlr/config.git                                                   $# $@
 register_remote libs/config                                                   paulannetts                              git@github.com:paulannetts/config.git                                            $# $@
 register_remote libs/config                                                   pfultz2                                  git@github.com:pfultz2/config.git                                                $# $@
@@ -455,9 +460,22 @@ register_remote libs/function_types                                           bo
 register_remote libs/functional                                               boostorg-original                        git@github.com:boostorg/functional.git                                           $# $@
 register_remote libs/fusion                                                   boostorg-original                        git@github.com:boostorg/fusion.git                                               $# $@
 register_remote libs/geometry                                                 boostorg-original                        git@github.com:boostorg/geometry.git                                             $# $@
+register_remote libs/gil                                                      Antropovi                                git@github.com:Antropovi/gil.git                                                 $# $@
+register_remote libs/gil                                                      DanielaE                                 git@github.com:DanielaE/boost.gil.git                                            $# $@
+register_remote libs/gil                                                      DhruvaG2000                              git@github.com:DhruvaG2000/gil.git                                               $# $@
+register_remote libs/gil                                                      LadyK-21                                 git@github.com:LadyK-21/gil.git                                                  $# $@
+register_remote libs/gil                                                      Mike-Devel                               git@github.com:Mike-Devel/gil.git                                                $# $@
+register_remote libs/gil                                                      NEDJIMAbelgacem                          git@github.com:NEDJIMAbelgacem/gil.git                                           $# $@
+register_remote libs/gil                                                      NiklasAngare                             git@github.com:NiklasAngare/gil.git                                              $# $@
+register_remote libs/gil                                                      OmarEmaraDev                             git@github.com:OmarEmaraDev/gil.git                                              $# $@
+register_remote libs/gil                                                      Paul92                                   git@github.com:Paul92/gil.git                                                    $# $@
+register_remote libs/gil                                                      Sayan-Chaudhuri                          git@github.com:Sayan-Chaudhuri/gil.git                                           $# $@
+register_remote libs/gil                                                      Scramjet911                              git@github.com:Scramjet911/gil.git                                               $# $@
+register_remote libs/gil                                                      ShotaOchi                                git@github.com:ShotaOchi/gil.git                                                 $# $@
+register_remote libs/gil                                                      Siddharth1010                            git@github.com:Siddharth1010/gil.git                                             $# $@
+register_remote libs/gil                                                      T-Deuty                                  git@github.com:T-Deuty/gil.git                                                   $# $@
 register_remote libs/gil                                                      aditya4102                               git@github.com:aditya4102/gil.git                                                $# $@
 register_remote libs/gil                                                      aman-roy                                 git@github.com:aman-roy/gil.git                                                  $# $@
-register_remote libs/gil                                                      Antropovi                                git@github.com:Antropovi/gil.git                                                 $# $@
 register_remote libs/gil                                                      avinal                                   git@github.com:avinal/gil.git                                                    $# $@
 register_remote libs/gil                                                      ayushbansal07                            git@github.com:ayushbansal07/gil.git                                             $# $@
 register_remote libs/gil                                                      bazelboost                               git@github.com:bazelboost/gil.git                                                $# $@
@@ -468,8 +486,6 @@ register_remote libs/gil                                                      bu
 register_remote libs/gil                                                      cancercentereu                           git@github.com:cancercentereu/gil.git                                            $# $@
 register_remote libs/gil                                                      classicvalues                            git@github.com:classicvalues/gil.git                                             $# $@
 register_remote libs/gil                                                      codejaeger                               git@github.com:codejaeger/gil.git                                                $# $@
-register_remote libs/gil                                                      DanielaE                                 git@github.com:DanielaE/boost.gil.git                                            $# $@
-register_remote libs/gil                                                      DhruvaG2000                              git@github.com:DhruvaG2000/gil.git                                               $# $@
 register_remote libs/gil                                                      eugene-kulak                             git@github.com:eugene-kulak/gil.git                                              $# $@
 register_remote libs/gil                                                      externpro                                git@github.com:externpro/gil.git                                                 $# $@
 register_remote libs/gil                                                      gallafent                                git@github.com:gallafent/gil.git                                                 $# $@
@@ -481,42 +497,31 @@ register_remote libs/gil                                                      gr
 register_remote libs/gil                                                      harshitpant1                             git@github.com:harshitpant1/gil.git                                              $# $@
 register_remote libs/gil                                                      isabella232                              git@github.com:isabella232/gil.git                                               $# $@
 register_remote libs/gil                                                      jsenn                                    git@github.com:jsenn/gil.git                                                     $# $@
-register_remote libs/gil                                                      LadyK-21                                 git@github.com:LadyK-21/gil.git                                                  $# $@
 register_remote libs/gil                                                      leantk                                   git@github.com:leantk/gil.git                                                    $# $@
 register_remote libs/gil                                                      lpranam                                  git@github.com:lpranam/gil.git                                                   $# $@
 register_remote libs/gil                                                      macmade                                  git@github.com:macmade/gil.git                                                   $# $@
 register_remote libs/gil                                                      marco-langer                             git@github.com:marco-langer/gil.git                                              $# $@
 register_remote libs/gil                                                      martin-carrasco                          git@github.com:martin-carrasco/gil.git                                           $# $@
 register_remote libs/gil                                                      meshtag                                  git@github.com:meshtag/gil.git                                                   $# $@
-register_remote libs/gil                                                      Mike-Devel                               git@github.com:Mike-Devel/gil.git                                                $# $@
 register_remote libs/gil                                                      miralshah365                             git@github.com:miralshah365/gil.git                                              $# $@
 register_remote libs/gil                                                      mloskot                                  git@github.com:mloskot/gil.git                                                   $# $@
 register_remote libs/gil                                                      mocabe                                   git@github.com:mocabe/gil.git                                                    $# $@
 register_remote libs/gil                                                      ncrookston                               git@github.com:ncrookston/gil.git                                                $# $@
-register_remote libs/gil                                                      NEDJIMAbelgacem                          git@github.com:NEDJIMAbelgacem/gil.git                                           $# $@
 register_remote libs/gil                                                      nicolacandussi                           git@github.com:nicolacandussi/gil.git                                            $# $@
-register_remote libs/gil                                                      NiklasAngare                             git@github.com:NiklasAngare/gil.git                                              $# $@
 register_remote libs/gil                                                      ohhmm                                    git@github.com:ohhmm/boost-gil.git                                               $# $@
-register_remote libs/gil                                                      OmarEmaraDev                             git@github.com:OmarEmaraDev/gil.git                                              $# $@
 register_remote libs/gil                                                      parthsarthi1                             git@github.com:parthsarthi1/gil.git                                              $# $@
-register_remote libs/gil                                                      Paul92                                   git@github.com:Paul92/gil.git                                                    $# $@
 register_remote libs/gil                                                      peschmae0                                git@github.com:peschmae0/gil.git                                                 $# $@
 register_remote libs/gil                                                      samd2                                    git@github.com:samd2/gil.git                                                     $# $@
 register_remote libs/gil                                                      samrat2825                               git@github.com:samrat2825/gil.git                                                $# $@
-register_remote libs/gil                                                      Sayan-Chaudhuri                          git@github.com:Sayan-Chaudhuri/gil.git                                           $# $@
 register_remote libs/gil                                                      schra                                    git@github.com:schra/gil.git                                                     $# $@
-register_remote libs/gil                                                      Scramjet911                              git@github.com:Scramjet911/gil.git                                               $# $@
 register_remote libs/gil                                                      sdarwin                                  git@github.com:sdarwin/gil.git                                                   $# $@
 register_remote libs/gil                                                      sdebionne                                git@github.com:sdebionne/gil.git                                                 $# $@
 register_remote libs/gil                                                      shikharvashistha                         git@github.com:shikharvashistha/gil.git                                          $# $@
-register_remote libs/gil                                                      ShotaOchi                                git@github.com:ShotaOchi/gil.git                                                 $# $@
 register_remote libs/gil                                                      sid19991                                 git@github.com:sid19991/gil.git                                                  $# $@
-register_remote libs/gil                                                      Siddharth1010                            git@github.com:Siddharth1010/gil.git                                             $# $@
 register_remote libs/gil                                                      simmplecoder                             git@github.com:simmplecoder/gil.git                                              $# $@
 register_remote libs/gil                                                      sourabhdharpure                          git@github.com:sourabhdharpure/gil.git                                           $# $@
 register_remote libs/gil                                                      stefanseefeld                            git@github.com:stefanseefeld/boost.gil.git                                       $# $@
 register_remote libs/gil                                                      striezel-stash                           git@github.com:striezel-stash/gil.git                                            $# $@
-register_remote libs/gil                                                      T-Deuty                                  git@github.com:T-Deuty/gil.git                                                   $# $@
 register_remote libs/gil                                                      theroyn                                  git@github.com:theroyn/gil.git                                                   $# $@
 register_remote libs/gil                                                      thesstefan                               git@github.com:thesstefan/gil.git                                                $# $@
 register_remote libs/gil                                                      xjhouska                                 git@github.com:xjhouska/gil.git                                                  $# $@
@@ -528,12 +533,13 @@ register_remote libs/hash2                                                    bo
 register_remote libs/headers                                                  boostorg-original                        git@github.com:boostorg/headers.git                                              $# $@
 register_remote libs/heap                                                     boostorg-original                        git@github.com:boostorg/heap.git                                                 $# $@
 register_remote libs/histogram                                                6a6ay                                    git@github.com:6a6ay/histogram.git                                               $# $@
-register_remote libs/histogram                                                bazelboost                               git@github.com:bazelboost/histogram.git                                          $# $@
 register_remote libs/histogram                                                BioDataAnalysis                          git@github.com:BioDataAnalysis/histogram.git                                     $# $@
+register_remote libs/histogram                                                ExternalRepositories                     git@github.com:ExternalRepositories/histogram.git                                $# $@
+register_remote libs/histogram                                                Tarun360-hub                             git@github.com:Tarun360-hub/histogram.git                                        $# $@
+register_remote libs/histogram                                                bazelboost                               git@github.com:bazelboost/histogram.git                                          $# $@
 register_remote libs/histogram                                                boostorg                                 git@github.com:boostorg/histogram.git                                            $# $@
 register_remote libs/histogram                                                boostorg-original                        git@github.com:boostorg/histogram.git                                            $# $@
 register_remote libs/histogram                                                ecatmur                                  git@github.com:ecatmur/histogram.git                                             $# $@
-register_remote libs/histogram                                                ExternalRepositories                     git@github.com:ExternalRepositories/histogram.git                                $# $@
 register_remote libs/histogram                                                gohil-jay                                git@github.com:gohil-jay/histogram.git                                           $# $@
 register_remote libs/histogram                                                grafikrobot                              git@github.com:grafikrobot/boostorg.histogram.git                                $# $@
 register_remote libs/histogram                                                henryiii                                 git@github.com:henryiii/histogram.git                                            $# $@
@@ -548,7 +554,6 @@ register_remote libs/histogram                                                ry
 register_remote libs/histogram                                                samd2                                    git@github.com:samd2/histogram.git                                               $# $@
 register_remote libs/histogram                                                sdarwin                                  git@github.com:sdarwin/histogram.git                                             $# $@
 register_remote libs/histogram                                                shenjiangqiu                             git@github.com:shenjiangqiu/histogram.git                                        $# $@
-register_remote libs/histogram                                                Tarun360-hub                             git@github.com:Tarun360-hub/histogram.git                                        $# $@
 register_remote libs/histogram                                                wiso                                     git@github.com:wiso/histogram.git                                                $# $@
 register_remote libs/hof                                                      boostorg-original                        git@github.com:boostorg/hof.git                                                  $# $@
 register_remote libs/icl                                                      boostorg-original                        git@github.com:boostorg/icl.git                                                  $# $@
@@ -574,10 +579,16 @@ register_remote libs/move                                                     bo
 register_remote libs/mp11                                                     boostorg-original                        git@github.com:boostorg/mp11.git                                                 $# $@
 register_remote libs/mpi                                                      boostorg-original                        git@github.com:boostorg/mpi.git                                                  $# $@
 register_remote libs/mpl                                                      ABBAPOH                                  git@github.com:ABBAPOH/mpl.git                                                   $# $@
+register_remote libs/mpl                                                      Bagira80                                 git@github.com:Bagira80/boostorg-mpl.git                                         $# $@
+register_remote libs/mpl                                                      DanielaE                                 git@github.com:DanielaE/boost.mpl.git                                            $# $@
+register_remote libs/mpl                                                      Elzair                                   git@github.com:Elzair/mpl.git                                                    $# $@
+register_remote libs/mpl                                                      Kojoley                                  git@github.com:Kojoley/mpl.git                                                   $# $@
+register_remote libs/mpl                                                      Lastique                                 git@github.com:Lastique/mpl.git                                                  $# $@
+register_remote libs/mpl                                                      Milerius                                 git@github.com:Milerius/mpl.git                                                  $# $@
+register_remote libs/mpl                                                      Romain-Geissler-1A                       git@github.com:Romain-Geissler-1A/mpl.git                                        $# $@
 register_remote libs/mpl                                                      aihao1007                                git@github.com:aihao1007/mpl.git                                                 $# $@
 register_remote libs/mpl                                                      apiaryio                                 git@github.com:apiaryio/boost-mpl.git                                            $# $@
 register_remote libs/mpl                                                      automeka                                 git@github.com:automeka/boost_mpl.git                                            $# $@
-register_remote libs/mpl                                                      Bagira80                                 git@github.com:Bagira80/boostorg-mpl.git                                         $# $@
 register_remote libs/mpl                                                      bazelboost                               git@github.com:bazelboost/mpl.git                                                $# $@
 register_remote libs/mpl                                                      boost-original                           git@github.com:boostorg/mpl.git                                                  $# $@
 register_remote libs/mpl                                                      boostandroid                             git@github.com:boostandroid/mpl.git                                              $# $@
@@ -586,20 +597,14 @@ register_remote libs/mpl                                                      bo
 register_remote libs/mpl                                                      buckaroo-pm                              git@github.com:buckaroo-pm/boost-mpl.git                                         $# $@
 register_remote libs/mpl                                                      buckaroo-upgrade-bot                     git@github.com:buckaroo-upgrade-bot/boost-mpl.git                                $# $@
 register_remote libs/mpl                                                      dabrahams                                git@github.com:dabrahams/mpl.git                                                 $# $@
-register_remote libs/mpl                                                      DanielaE                                 git@github.com:DanielaE/boost.mpl.git                                            $# $@
 register_remote libs/mpl                                                      danieljames                              git@github.com:danieljames/mpl.git                                               $# $@
-register_remote libs/mpl                                                      Elzair                                   git@github.com:Elzair/mpl.git                                                    $# $@
 register_remote libs/mpl                                                      georgthegreat                            git@github.com:georgthegreat/mpl.git                                             $# $@
 register_remote libs/mpl                                                      gnzlbg                                   git@github.com:gnzlbg/mpl.git                                                    $# $@
 register_remote libs/mpl                                                      hia3                                     git@github.com:hia3/mpl.git                                                      $# $@
 register_remote libs/mpl                                                      igaztanaga                               git@github.com:igaztanaga/mpl.git                                                $# $@
-register_remote libs/mpl                                                      Kojoley                                  git@github.com:Kojoley/mpl.git                                                   $# $@
-register_remote libs/mpl                                                      Lastique                                 git@github.com:Lastique/mpl.git                                                  $# $@
 register_remote libs/mpl                                                      matbech                                  git@github.com:matbech/mpl.git                                                   $# $@
-register_remote libs/mpl                                                      Milerius                                 git@github.com:Milerius/mpl.git                                                  $# $@
 register_remote libs/mpl                                                      njlr                                     git@github.com:njlr/mpl.git                                                      $# $@
 register_remote libs/mpl                                                      pfultz2                                  git@github.com:pfultz2/mpl.git                                                   $# $@
-register_remote libs/mpl                                                      Romain-Geissler-1A                       git@github.com:Romain-Geissler-1A/mpl.git                                        $# $@
 register_remote libs/mpl                                                      sdarwin                                  git@github.com:sdarwin/mpl.git                                                   $# $@
 register_remote libs/mpl                                                      smanders                                 git@github.com:smanders/mpl.git                                                  $# $@
 register_remote libs/mpl                                                      thomas955                                git@github.com:thomas955/mpl.git                                                 $# $@
@@ -628,11 +633,17 @@ register_remote libs/pool                                                     bo
 register_remote libs/predef                                                   boostorg-original                        git@github.com:boostorg/predef.git                                               $# $@
 register_remote libs/preprocessor                                             boostorg-original                        git@github.com:boostorg/preprocessor.git                                         $# $@
 register_remote libs/process                                                  13steinj                                 git@github.com:13steinj/boost.process.git                                        $# $@
+register_remote libs/process                                                  ArielSilver                              git@github.com:ArielSilver/process.git                                           $# $@
+register_remote libs/process                                                  DanielaE                                 git@github.com:DanielaE/boost.process.git                                        $# $@
+register_remote libs/process                                                  DevonMorris                              git@github.com:DevonMorris/process.git                                           $# $@
+register_remote libs/process                                                  JBT-DSI                                  git@github.com:JBT-DSI/process.git                                               $# $@
+register_remote libs/process                                                  JackDrogon                               git@github.com:JackDrogon/process.git                                            $# $@
+register_remote libs/process                                                  Kalabaza                                 git@github.com:Kalabaza/process.git                                              $# $@
+register_remote libs/process                                                  T3RR7                                    git@github.com:T3RR7/process.git                                                 $# $@
 register_remote libs/process                                                  achow101                                 git@github.com:achow101/process.git                                              $# $@
 register_remote libs/process                                                  alanbirtles                              git@github.com:alanbirtles/process.git                                           $# $@
 register_remote libs/process                                                  aluaces                                  git@github.com:aluaces/process.git                                               $# $@
 register_remote libs/process                                                  arghness                                 git@github.com:arghness/process.git                                              $# $@
-register_remote libs/process                                                  ArielSilver                              git@github.com:ArielSilver/process.git                                           $# $@
 register_remote libs/process                                                  azat-archive                             git@github.com:azat-archive/process.git                                          $# $@
 register_remote libs/process                                                  bazelboost                               git@github.com:bazelboost/process.git                                            $# $@
 register_remote libs/process                                                  bebuch                                   git@github.com:bebuch/process.git                                                $# $@
@@ -642,9 +653,7 @@ register_remote libs/process                                                  br
 register_remote libs/process                                                  cdglove                                  git@github.com:cdglove/process.git                                               $# $@
 register_remote libs/process                                                  ceggers-arri                             git@github.com:ceggers-arri/boost-process.git                                    $# $@
 register_remote libs/process                                                  chriskohlhoff                            git@github.com:chriskohlhoff/process.git                                         $# $@
-register_remote libs/process                                                  DanielaE                                 git@github.com:DanielaE/boost.process.git                                        $# $@
 register_remote libs/process                                                  dchansen                                 git@github.com:dchansen/process.git                                              $# $@
-register_remote libs/process                                                  DevonMorris                              git@github.com:DevonMorris/process.git                                           $# $@
 register_remote libs/process                                                  dkl                                      git@github.com:dkl/boost-process.git                                             $# $@
 register_remote libs/process                                                  dulikvor                                 git@github.com:dulikvor/process.git                                              $# $@
 register_remote libs/process                                                  edtanous                                 git@github.com:edtanous/process.git                                              $# $@
@@ -654,11 +663,8 @@ register_remote libs/process                                                  ga
 register_remote libs/process                                                  gitmodimo                                git@github.com:gitmodimo/process.git                                             $# $@
 register_remote libs/process                                                  grafikrobot                              git@github.com:grafikrobot/boostorg.process.git                                  $# $@
 register_remote libs/process                                                  ivan-efimov                              git@github.com:ivan-efimov/process.git                                           $# $@
-register_remote libs/process                                                  JackDrogon                               git@github.com:JackDrogon/process.git                                            $# $@
-register_remote libs/process                                                  JBT-DSI                                  git@github.com:JBT-DSI/process.git                                               $# $@
 register_remote libs/process                                                  justend29                                git@github.com:justend29/process.git                                             $# $@
 register_remote libs/process                                                  k15tfu                                   git@github.com:k15tfu/process.git                                                $# $@
-register_remote libs/process                                                  Kalabaza                                 git@github.com:Kalabaza/process.git                                              $# $@
 register_remote libs/process                                                  leha-bot                                 git@github.com:leha-bot/process.git                                              $# $@
 register_remote libs/process                                                  mark-christensen                         git@github.com:mark-christensen/process.git                                      $# $@
 register_remote libs/process                                                  mknaleczb                                git@github.com:mknaleczb/environment_get_not_working_for_wstring_on_windows.git  $# $@
@@ -670,7 +676,6 @@ register_remote libs/process                                                  sa
 register_remote libs/process                                                  sdarwin                                  git@github.com:sdarwin/process.git                                               $# $@
 register_remote libs/process                                                  sehe                                     git@github.com:sehe/process.git                                                  $# $@
 register_remote libs/process                                                  slowriot                                 git@github.com:slowriot/process.git                                              $# $@
-register_remote libs/process                                                  T3RR7                                    git@github.com:T3RR7/process.git                                                 $# $@
 register_remote libs/process                                                  tomy2105                                 git@github.com:tomy2105/process.git                                              $# $@
 register_remote libs/process                                                  toonetown                                git@github.com:toonetown/boostorg-process.git                                    $# $@
 register_remote libs/process                                                  treesoft-de                              git@github.com:treesoft-de/process.git                                           $# $@
@@ -691,6 +696,17 @@ register_remote libs/ratio                                                    bo
 register_remote libs/rational                                                 boostorg-original                        git@github.com:boostorg/rational.git                                             $# $@
 register_remote libs/redis                                                    boostorg-original                        git@github.com:boostorg/redis.git                                                $# $@
 register_remote libs/regex                                                    0xFEEDC0DE64                             git@github.com:0xFEEDC0DE64/boost_regex.git                                      $# $@
+register_remote libs/regex                                                    BrianWeed                                git@github.com:BrianWeed/regex.git                                               $# $@
+register_remote libs/regex                                                    DanielaE                                 git@github.com:DanielaE/boost.regex.git                                          $# $@
+register_remote libs/regex                                                    DenizThatMenace                          git@github.com:DenizThatMenace/boostorg-regex.git                                $# $@
+register_remote libs/regex                                                    Elzair                                   git@github.com:Elzair/regex.git                                                  $# $@
+register_remote libs/regex                                                    Malterlib                                git@github.com:Malterlib/boost_regex.git                                         $# $@
+register_remote libs/regex                                                    Mike-Devel                               git@github.com:Mike-Devel/regex.git                                              $# $@
+register_remote libs/regex                                                    PhilLab                                  git@github.com:PhilLab/regex.git                                                 $# $@
+register_remote libs/regex                                                    Romain-Geissler-1A                       git@github.com:Romain-Geissler-1A/regex.git                                      $# $@
+register_remote libs/regex                                                    SMSEP                                    git@github.com:SMSEP/regex.git                                                   $# $@
+register_remote libs/regex                                                    SamB                                     git@github.com:SamB/regex.git                                                    $# $@
+register_remote libs/regex                                                    Teemperor                                git@github.com:Teemperor/regex.git                                               $# $@
 register_remote libs/regex                                                    aronpgit                                 git@github.com:aronpgit/regex.git                                                $# $@
 register_remote libs/regex                                                    asomers                                  git@github.com:asomers/regex.git                                                 $# $@
 register_remote libs/regex                                                    automeka                                 git@github.com:automeka/boost_regex.git                                          $# $@
@@ -700,28 +716,17 @@ register_remote libs/regex                                                    bo
 register_remote libs/regex                                                    boostorg                                 git@github.com:boostorg/regex.git                                                $# $@
 register_remote libs/regex                                                    boostorg-original                        git@github.com:boostorg/regex.git                                                $# $@
 register_remote libs/regex                                                    boytm                                    git@github.com:boytm/regex.git                                                   $# $@
-register_remote libs/regex                                                    BrianWeed                                git@github.com:BrianWeed/regex.git                                               $# $@
 register_remote libs/regex                                                    buckaroo-pm                              git@github.com:buckaroo-pm/boost-regex.git                                       $# $@
 register_remote libs/regex                                                    buckaroo-upgrade-bot                     git@github.com:buckaroo-upgrade-bot/boost-regex.git                              $# $@
 register_remote libs/regex                                                    cmazakas                                 git@github.com:cmazakas/regex.git                                                $# $@
-register_remote libs/regex                                                    DanielaE                                 git@github.com:DanielaE/boost.regex.git                                          $# $@
 register_remote libs/regex                                                    david-w-t                                git@github.com:david-w-t/regex.git                                               $# $@
-register_remote libs/regex                                                    DenizThatMenace                          git@github.com:DenizThatMenace/boostorg-regex.git                                $# $@
-register_remote libs/regex                                                    Elzair                                   git@github.com:Elzair/regex.git                                                  $# $@
 register_remote libs/regex                                                    externpro                                git@github.com:externpro/regex.git                                               $# $@
 register_remote libs/regex                                                    jeking3                                  git@github.com:jeking3/regex.git                                                 $# $@
-register_remote libs/regex                                                    Malterlib                                git@github.com:Malterlib/boost_regex.git                                         $# $@
 register_remote libs/regex                                                    mauve                                    git@github.com:mauve/regex.git                                                   $# $@
-register_remote libs/regex                                                    Mike-Devel                               git@github.com:Mike-Devel/regex.git                                              $# $@
 register_remote libs/regex                                                    njlr                                     git@github.com:njlr/regex.git                                                    $# $@
-register_remote libs/regex                                                    PhilLab                                  git@github.com:PhilLab/regex.git                                                 $# $@
-register_remote libs/regex                                                    Romain-Geissler-1A                       git@github.com:Romain-Geissler-1A/regex.git                                      $# $@
-register_remote libs/regex                                                    SamB                                     git@github.com:SamB/regex.git                                                    $# $@
 register_remote libs/regex                                                    samcday                                  git@github.com:samcday/regex.git                                                 $# $@
 register_remote libs/regex                                                    samd2                                    git@github.com:samd2/regex.git                                                   $# $@
 register_remote libs/regex                                                    sdarwin                                  git@github.com:sdarwin/regex.git                                                 $# $@
-register_remote libs/regex                                                    SMSEP                                    git@github.com:SMSEP/regex.git                                                   $# $@
-register_remote libs/regex                                                    Teemperor                                git@github.com:Teemperor/regex.git                                               $# $@
 register_remote libs/regex                                                    tempoz                                   git@github.com:tempoz/regex.git                                                  $# $@
 register_remote libs/regex                                                    vulptex                                  git@github.com:vulptex/regex.git                                                 $# $@
 register_remote libs/regex                                                    ya1gaurav                                git@github.com:ya1gaurav/regex.git                                               $# $@
@@ -743,45 +748,47 @@ register_remote libs/stl_interfaces                                           bo
 register_remote libs/sync                                                     boostorg-original                        git@github.com:boostorg/sync.git                                                 $# $@
 register_remote libs/system                                                   boostorg-original                        git@github.com:boostorg/system.git                                               $# $@
 register_remote libs/test                                                     boostorg-original                        git@github.com:boostorg/test.git                                                 $# $@
+register_remote libs/thread                                                   BenWiederhake                            git@github.com:BenWiederhake/thread.git                                          $# $@
+register_remote libs/thread                                                   Brugarolas                               git@github.com:Brugarolas/cpp-thread.git                                         $# $@
+register_remote libs/thread                                                   Dani-Hub                                 git@github.com:Dani-Hub/thread.git                                               $# $@
+register_remote libs/thread                                                   DanielaE                                 git@github.com:DanielaE/boost.thread.git                                         $# $@
+register_remote libs/thread                                                   EugeneZelenko                            git@github.com:EugeneZelenko/thread.git                                          $# $@
+register_remote libs/thread                                                   Flamefire                                git@github.com:Flamefire/thread.git                                              $# $@
+register_remote libs/thread                                                   Hexagon-HTC                              git@github.com:Hexagon-HTC/thread.git                                            $# $@
+register_remote libs/thread                                                   Kojoley                                  git@github.com:Kojoley/thread.git                                                $# $@
+register_remote libs/thread                                                   Lastique                                 git@github.com:Lastique/thread.git                                               $# $@
+register_remote libs/thread                                                   MarcelRaad                               git@github.com:MarcelRaad/thread.git                                             $# $@
+register_remote libs/thread                                                   Mike-Devel                               git@github.com:Mike-Devel/thread.git                                             $# $@
+register_remote libs/thread                                                   Oberon00                                 git@github.com:Oberon00/thread.git                                               $# $@
+register_remote libs/thread                                                   PhilLab                                  git@github.com:PhilLab/thread.git                                                $# $@
+register_remote libs/thread                                                   SysRay                                   git@github.com:SysRay/thread.git                                                 $# $@
+register_remote libs/thread                                                   WSoptics                                 git@github.com:WSoptics/thread.git                                               $# $@
 register_remote libs/thread                                                   airtimemedia                             git@github.com:airtimemedia/boost-thread.git                                     $# $@
 register_remote libs/thread                                                   andrewkatson                             git@github.com:andrewkatson/thread.git                                           $# $@
 register_remote libs/thread                                                   austin-beer                              git@github.com:austin-beer/thread.git                                            $# $@
 register_remote libs/thread                                                   bazelboost                               git@github.com:bazelboost/thread.git                                             $# $@
-register_remote libs/thread                                                   BenWiederhake                            git@github.com:BenWiederhake/thread.git                                          $# $@
 register_remote libs/thread                                                   boostandroid                             git@github.com:boostandroid/thread.git                                           $# $@
 register_remote libs/thread                                                   boostorg                                 git@github.com:boostorg/thread.git                                               $# $@
 register_remote libs/thread                                                   boostorg-original                        git@github.com:boostorg/thread.git                                               $# $@
-register_remote libs/thread                                                   Brugarolas                               git@github.com:Brugarolas/cpp-thread.git                                         $# $@
 register_remote libs/thread                                                   buckaroo-pm                              git@github.com:buckaroo-pm/boost-thread.git                                      $# $@
 register_remote libs/thread                                                   buckaroo-upgrade-bot                     git@github.com:buckaroo-upgrade-bot/boost-thread.git                             $# $@
 register_remote libs/thread                                                   cperras                                  git@github.com:cperras/boost-thread.git                                          $# $@
-register_remote libs/thread                                                   Dani-Hub                                 git@github.com:Dani-Hub/thread.git                                               $# $@
-register_remote libs/thread                                                   DanielaE                                 git@github.com:DanielaE/boost.thread.git                                         $# $@
 register_remote libs/thread                                                   dmenendez-gruposantander                 git@github.com:dmenendez-gruposantander/thread.git                               $# $@
 register_remote libs/thread                                                   en4bz                                    git@github.com:en4bz/thread.git                                                  $# $@
-register_remote libs/thread                                                   EugeneZelenko                            git@github.com:EugeneZelenko/thread.git                                          $# $@
-register_remote libs/thread                                                   Flamefire                                git@github.com:Flamefire/thread.git                                              $# $@
 register_remote libs/thread                                                   frascm                                   git@github.com:frascm/thread.git                                                 $# $@
 register_remote libs/thread                                                   geoherna                                 git@github.com:geoherna/thread.git                                               $# $@
 register_remote libs/thread                                                   giomasce-throwaway                       git@github.com:giomasce-throwaway/thread.git                                     $# $@
 register_remote libs/thread                                                   grafikrobot                              git@github.com:grafikrobot/boostorg.thread.git                                   $# $@
-register_remote libs/thread                                                   Hexagon-HTC                              git@github.com:Hexagon-HTC/thread.git                                            $# $@
 register_remote libs/thread                                                   hzruandd                                 git@github.com:hzruandd/thread.git                                               $# $@
 register_remote libs/thread                                                   ibmsoe                                   git@github.com:ibmsoe/thread.git                                                 $# $@
 register_remote libs/thread                                                   jessicah                                 git@github.com:jessicah/boost-thread.git                                         $# $@
-register_remote libs/thread                                                   Kojoley                                  git@github.com:Kojoley/thread.git                                                $# $@
-register_remote libs/thread                                                   Lastique                                 git@github.com:Lastique/thread.git                                               $# $@
 register_remote libs/thread                                                   makelinux                                git@github.com:makelinux/thread.git                                              $# $@
-register_remote libs/thread                                                   MarcelRaad                               git@github.com:MarcelRaad/thread.git                                             $# $@
 register_remote libs/thread                                                   mauve                                    git@github.com:mauve/thread.git                                                  $# $@
-register_remote libs/thread                                                   Mike-Devel                               git@github.com:Mike-Devel/thread.git                                             $# $@
 register_remote libs/thread                                                   mikecrowe                                git@github.com:mikecrowe/thread.git                                              $# $@
 register_remote libs/thread                                                   mkartashev                               git@github.com:mkartashev/thread.git                                             $# $@
 register_remote libs/thread                                                   mongodb-forks                            git@github.com:mongodb-forks/thread.git                                          $# $@
 register_remote libs/thread                                                   ned14                                    git@github.com:ned14/thread.git                                                  $# $@
 register_remote libs/thread                                                   njlr                                     git@github.com:njlr/thread.git                                                   $# $@
-register_remote libs/thread                                                   Oberon00                                 git@github.com:Oberon00/thread.git                                               $# $@
-register_remote libs/thread                                                   PhilLab                                  git@github.com:PhilLab/thread.git                                                $# $@
 register_remote libs/thread                                                   res2k                                    git@github.com:res2k/thread.git                                                  $# $@
 register_remote libs/thread                                                   rick68                                   git@github.com:rick68/thread.git                                                 $# $@
 register_remote libs/thread                                                   samd2                                    git@github.com:samd2/thread.git                                                  $# $@
@@ -789,14 +796,12 @@ register_remote libs/thread                                                   sd
 register_remote libs/thread                                                   sonicbison                               git@github.com:sonicbison/thread.git                                             $# $@
 register_remote libs/thread                                                   srouquette                               git@github.com:srouquette/thread.git                                             $# $@
 register_remote libs/thread                                                   stammen                                  git@github.com:stammen/thread.git                                                $# $@
-register_remote libs/thread                                                   SysRay                                   git@github.com:SysRay/thread.git                                                 $# $@
 register_remote libs/thread                                                   tempoz                                   git@github.com:tempoz/thread.git                                                 $# $@
 register_remote libs/thread                                                   theodelrieu                              git@github.com:theodelrieu/thread.git                                            $# $@
 register_remote libs/thread                                                   thughes                                  git@github.com:thughes/thread.git                                                $# $@
 register_remote libs/thread                                                   timblechmann                             git@github.com:timblechmann/thread.git                                           $# $@
 register_remote libs/thread                                                   tinhto-000                               git@github.com:tinhto-000/thread.git                                             $# $@
 register_remote libs/thread                                                   vincenthsu                               git@github.com:vincenthsu/thread.git                                             $# $@
-register_remote libs/thread                                                   WSoptics                                 git@github.com:WSoptics/thread.git                                               $# $@
 register_remote libs/thread                                                   ya1gaurav                                git@github.com:ya1gaurav/thread.git                                              $# $@
 register_remote libs/thread                                                   zlojvavan                                git@github.com:zlojvavan/thread.git                                              $# $@
 register_remote libs/throw_exception                                          boostorg-original                        git@github.com:boostorg/throw_exception.git                                      $# $@
@@ -826,9 +831,9 @@ register_remote more                                                          bo
 register_remote tools/auto_index                                              boostorg-original                        git@github.com:boostorg/auto_index.git                                           $# $@
 register_remote tools/bcp                                                     boostorg-original                        git@github.com:boostorg/bcp.git                                                  $# $@
 register_remote tools/boost_install                                           boostorg-original                        git@github.com:boostorg/boost_install.git                                        $# $@
+register_remote tools/boost_unordered_benchmarks                              GerHobbelt-original                      git@github.com:GerHobbelt/boost_unordered_benchmarks.git                         $# $@
 register_remote tools/boost_unordered_benchmarks                              boostorg                                 git@github.com:boostorg/boost_unordered_benchmarks.git                           $# $@
 register_remote tools/boost_unordered_benchmarks                              boostorg-original                        git@github.com:boostorg/boost_unordered_benchmarks.git                           $# $@
-register_remote tools/boost_unordered_benchmarks                              GerHobbelt-original                      git@github.com:GerHobbelt/boost_unordered_benchmarks.git                         $# $@
 register_remote tools/boostbook                                               boostorg-original                        git@github.com:boostorg/boostbook.git                                            $# $@
 register_remote tools/boostdep                                                boostorg-original                        git@github.com:boostorg/boostdep.git                                             $# $@
 register_remote tools/boostlook                                               boostorg-original                        git@github.com:boostorg/boostlook.git                                            $# $@
@@ -839,8 +844,3 @@ register_remote tools/docca                                                   bo
 register_remote tools/inspect                                                 boostorg-original                        git@github.com:boostorg/inspect.git                                              $# $@
 register_remote tools/litre                                                   boostorg-original                        git@github.com:boostorg/litre.git                                                $# $@
 register_remote tools/quickbook                                               boostorg-original                        git@github.com:boostorg/quickbook.git                                            $# $@
-
-
-
-popd                                                                            2> /dev/null   > /dev/null
-
