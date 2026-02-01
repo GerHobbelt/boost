@@ -860,16 +860,16 @@
 	branch = .
 [submodule "bloom"]
 	path = libs/bloom
-	url = ../bloom.git
+	url = https://github.com/boostorg/bloom.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "openmethod"]
 	path = libs/openmethod
-	url = ../openmethod.git
+	url = https://github.com/boostorg/openmethod.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "decimal"]
 	path = libs/decimal
-	url = ../decimal.git
+	url = https://github.com/boostorg/decimal.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
