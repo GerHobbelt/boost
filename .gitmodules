@@ -928,3 +928,30 @@
 	fetchRecurseSubmodules = on-demand
 	branch = .
 
+[submodule "libs/tr1"]
+	path = libs/tr1
+	url = https://github.com/boostorg/tr1.git
+[submodule "tools/bpm"]
+	path = tools/bpm
+	url = https://github.com/boostorg/bpm.git
+[submodule "libs/disjoint_sets"]
+	path = libs/disjoint_sets
+	url = https://github.com/boostorg/disjoint_sets.git
+[submodule "libs/spirit_x4"]
+	path = libs/spirit_x4
+	url = https://github.com/boostorg/spirit_x4.git
+[submodule "tools/boost_bloom_benchmarks"]
+	path = tools/boost_bloom_benchmarks
+	url = https://github.com/boostorg/boost_bloom_benchmarks.git
+[submodule "tools/boost_hub_benchmarks"]
+	path = tools/boost_hub_benchmarks
+	url = https://github.com/boostorg/boost_hub_benchmarks.git
+[submodule "libs/regression"]
+	path = libs/regression
+	url = https://github.com/boostorg/regression.git
+[submodule "tools/website-v2-docs"]
+	path = tools/website-v2-docs
+	url = https://github.com/boostorg/website-v2-docs.git
+[submodule "tools/boost-ci"]
+	path = tools/boost-ci
+	url = https://github.com/boostorg/boost-ci.git
