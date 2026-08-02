@@ -255,7 +255,7 @@
 	branch = .
 [submodule "array"]
 	path = libs/array
-	url = https://github.com/boostorg/array.git
+	url = https://github.com/GerHobbelt/array.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "iostreams"]
