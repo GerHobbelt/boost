@@ -963,3 +963,8 @@
 	url = https://github.com/boostorg/boost-ci.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
+[submodule "int128"]
+	path = libs/int128
+	url = https://github.com/boostorg/int128.git
+	fetchRecurseSubmodules = on-demand
+	branch = .
