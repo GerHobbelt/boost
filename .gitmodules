@@ -15,7 +15,7 @@
 	branch = .
 [submodule "smart_ptr"]
 	path = libs/smart_ptr
-	url = https://github.com/boostorg/smart_ptr.git
+	url = https://github.com/GerHobbelt/smart_ptr.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "parameter"]
@@ -45,7 +45,7 @@
 	branch = .
 [submodule "tti"]
 	path = libs/tti
-	url = https://github.com/boostorg/tti.git
+	url = https://github.com/GerHobbelt/tti.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "functional"]
@@ -80,7 +80,7 @@
 	branch = .
 [submodule "spirit"]
 	path = libs/spirit
-	url = https://github.com/boostorg/spirit.git
+	url = https://github.com/GerHobbelt/spirit.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "io"]
@@ -105,7 +105,7 @@
 	branch = .
 [submodule "xpressive"]
 	path = libs/xpressive
-	url = https://github.com/boostorg/xpressive.git
+	url = https://github.com/GerHobbelt/xpressive.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "integer"]
@@ -115,7 +115,7 @@
 	branch = .
 [submodule "thread"]
 	path = libs/thread
-	url = https://github.com/boostorg/thread.git
+	url = https://github.com/GerHobbelt/thread.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "tokenizer"]
@@ -125,7 +125,7 @@
 	branch = .
 [submodule "timer"]
 	path = libs/timer
-	url = https://github.com/boostorg/timer.git
+	url = https://github.com/GerHobbelt/timer.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "inspect"]
@@ -205,7 +205,7 @@
 	branch = .
 [submodule "utility"]
 	path = libs/utility
-	url = https://github.com/boostorg/utility.git
+	url = https://github.com/GerHobbelt/utility.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "dynamic_bitset"]
@@ -265,12 +265,12 @@
 	branch = .
 [submodule "multi_index"]
 	path = libs/multi_index
-	url = https://github.com/boostorg/multi_index.git
+	url = https://github.com/GerHobbelt/multi_index.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "bcp"]
 	path = tools/bcp
-	url = https://github.com/boostorg/bcp.git
+	url = https://github.com/GerHobbelt/bcp.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "ptr_container"]
@@ -325,7 +325,7 @@
 	branch = .
 [submodule "program_options"]
 	path = libs/program_options
-	url = https://github.com/boostorg/program_options.git
+	url = https://github.com/GerHobbelt/program_options.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "detail"]
@@ -350,7 +350,7 @@
 	branch = .
 [submodule "type_traits"]
 	path = libs/type_traits
-	url = https://github.com/boostorg/type_traits.git
+	url = https://github.com/GerHobbelt/type_traits.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "compatibility"]
@@ -415,7 +415,7 @@
 	branch = .
 [submodule "mpi"]
 	path = libs/mpi
-	url = https://github.com/boostorg/mpi.git
+	url = https://github.com/GerHobbelt/mpi.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "unordered"]
@@ -425,12 +425,12 @@
 	branch = .
 [submodule "signals2"]
 	path = libs/signals2
-	url = https://github.com/boostorg/signals2.git
+	url = https://github.com/GerHobbelt/signals2.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "accumulators"]
 	path = libs/accumulators
-	url = https://github.com/boostorg/accumulators.git
+	url = https://github.com/GerHobbelt/accumulators.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "atomic"]
@@ -455,7 +455,7 @@
 	branch = .
 [submodule "predef"]
 	path = libs/predef
-	url = https://github.com/boostorg/predef.git
+	url = https://github.com/GerHobbelt/boost_predef.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "chrono"]
@@ -720,7 +720,7 @@
 	branch = .
 [submodule "boost_install"]
 	path = tools/boost_install
-	url = https://github.com/boostorg/boost_install.git
+	url = https://github.com/GerHobbelt/boost_install.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "outcome"]
@@ -800,7 +800,7 @@
 	branch = .
 [submodule "url"]
 	path = libs/url
-	url = https://github.com/boostorg/url.git
+	url = https://github.com/GerHobbelt/boost-url.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "mysql"]
