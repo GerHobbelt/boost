@@ -18,9 +18,12 @@ else
 		git pull
 		git reset --hard
 		git checkout develop
-		git pull
-		git reset --hard
-		/z/tools/merge_tracked_git_original_4_branch.sh -m
+		if [ `git rev-parse --verify develop 2>/dev/null` ] ; then
+			git branch --set-upstream-to=origin/develop develop
+			git pull
+			git reset --hard
+			/z/tools/merge_tracked_git_original_4_branch.sh -m
+		fi
 		git reset --hard
 		git checkout main
 		git checkout master
