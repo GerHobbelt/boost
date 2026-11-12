@@ -35,7 +35,7 @@
 	branch = .
 [submodule "concept_check"]
 	path = libs/concept_check
-	url = https://github.com/boostorg/concept_check.git
+	url = https://github.com/GerHobbelt/concept_check.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "python"]
@@ -70,7 +70,7 @@
 	branch = .
 [submodule "exception"]
 	path = libs/exception
-	url = https://github.com/boostorg/exception.git
+	url = https://github.com/GerHobbelt/exception.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "foreach"]
@@ -100,7 +100,7 @@
 	branch = .
 [submodule "format"]
 	path = libs/format
-	url = https://github.com/boostorg/format.git
+	url = https://github.com/GerHobbelt/format.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "xpressive"]
@@ -150,7 +150,7 @@
 	branch = .
 [submodule "random"]
 	path = libs/random
-	url = https://github.com/boostorg/random.git
+	url = https://github.com/GerHobbelt/boost_random.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "serialization"]
@@ -160,7 +160,7 @@
 	branch = .
 [submodule "test"]
 	path = libs/test
-	url = https://github.com/boostorg/test.git
+	url = https://github.com/GerHobbelt/test.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "date_time"]
@@ -175,7 +175,7 @@
 	branch = .
 [submodule "graph"]
 	path = libs/graph
-	url = https://github.com/boostorg/graph.git
+	url = https://github.com/GerHobbelt/graph.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "numeric_conversion"]
@@ -185,7 +185,7 @@
 	branch = .
 [submodule "lambda"]
 	path = libs/lambda
-	url = https://github.com/boostorg/lambda.git
+	url = https://github.com/GerHobbelt/lambda.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "mpl"]
@@ -330,7 +330,7 @@
 	branch = .
 [submodule "detail"]
 	path = libs/detail
-	url = https://github.com/boostorg/detail.git
+	url = https://github.com/GerHobbelt/detail.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "interval"]
@@ -370,12 +370,12 @@
 	branch = .
 [submodule "proto"]
 	path = libs/proto
-	url = https://github.com/boostorg/proto.git
+	url = https://github.com/GerHobbelt/proto.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "fusion"]
 	path = libs/fusion
-	url = https://github.com/boostorg/fusion.git
+	url = https://github.com/GerHobbelt/fusion.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "function_types"]
@@ -395,7 +395,7 @@
 	branch = .
 [submodule "asio"]
 	path = libs/asio
-	url = https://github.com/boostorg/asio.git
+	url = https://github.com/GerHobbelt/boost_asio.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "uuid"]
@@ -480,7 +480,7 @@
 	branch = .
 [submodule "coroutine"]
 	path = libs/coroutine
-	url = https://github.com/boostorg/coroutine.git
+	url = https://github.com/GerHobbelt/coroutine.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "coroutine2"]
@@ -525,12 +525,12 @@
 	branch = .
 [submodule "container"]
 	path = libs/container
-	url = https://github.com/boostorg/container.git
+	url = https://github.com/GerHobbelt/container.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "local_function"]
 	path = libs/local_function
-	url = https://github.com/boostorg/local_function.git
+	url = https://github.com/GerHobbelt/local_function.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "context"]
@@ -545,7 +545,7 @@
 	branch = .
 [submodule "multiprecision"]
 	path = libs/multiprecision
-	url = https://github.com/boostorg/multiprecision.git
+	url = https://github.com/GerHobbelt/multiprecision.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "lockfree"]
@@ -575,7 +575,7 @@
 	branch = .
 [submodule "core"]
 	path = libs/core
-	url = https://github.com/boostorg/core.git
+	url = https://github.com/GerHobbelt/boost_core.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "throw_exception"]
@@ -610,7 +610,7 @@
 	branch = .
 [submodule "endian"]
 	path = libs/endian
-	url = https://github.com/boostorg/endian.git
+	url = https://github.com/GerHobbelt/endian.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "vmd"]
@@ -850,12 +850,12 @@
 	branch = .
 [submodule "mqtt5"]
 	path = libs/mqtt5
-	url = https://github.com/boostorg/mqtt5.git
+	url = https://github.com/GerHobbelt/mqtt5.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "hash2"]
 	path = libs/hash2
-	url = https://github.com/boostorg/hash2.git
+	url = https://github.com/GerHobbelt/hash2.git
 	fetchRecurseSubmodules = on-demand
 	branch = .
 [submodule "bloom"]
