@@ -7,29 +7,55 @@ GPP=/z/tools/git_pull_push.sh
 SCRIPT=$( basename "$0" )
 
 if [ "$1" != "TRACK-AND-MERGE" ] ; then
-	${GPP} -x "$( realpath "$0" )" TRACK-AND-MERGE
+    rm "$0.__TODO__.log"                                                                                        2> /dev/null
+    ${GPP} -x "$( realpath "$0" )" TRACK-AND-MERGE
 else
-	echo "PWD = $( pwd )"
-	if [ -f ${SCRIPT} ] ; then
-		echo "Skipping base directory..."
-	else
-		git checkout main
-		git checkout master
-		git pull
-		git reset --hard
-		git checkout develop
-		if [ `git rev-parse --verify develop 2>/dev/null` ] ; then
-			git branch --set-upstream-to=origin/develop develop
-			git pull
-			git reset --hard
-			/z/tools/merge_tracked_git_original_4_branch.sh -m
-		fi
-		git reset --hard
-		git checkout main
-		git checkout master
-		${GPP} -p
-		git reset --hard
-		/z/tools/merge_tracked_git_original_4_branch.sh -m
-		git reset --hard
-	fi
+    echo "PWD = $( pwd )"
+    if [ -f ${SCRIPT} ] ; then
+        echo "Skipping base directory..."
+        ${GPP} -p
+    else
+        TMPDST=$( mktemp -d /tmp/$SCRIPT.XXXXXX )/$SCRIPT.__TODO__
+
+        # collect the console output in case the automatic update/merge fails and we need to inspect this repo dir manually:
+        {
+            git checkout main
+            git checkout master
+            git pull
+            git reset --hard
+            git checkout develop
+            if [ `git rev-parse --verify develop 2>/dev/null` ] ; then
+                git branch --set-upstream-to=origin/develop develop
+                git pull
+                git reset --hard
+                /z/tools/merge_tracked_git_original_4_branch.sh -m
+                retVal=$?
+                if [ $retVal -ge 2 ]; then
+                    touch $TMPDST.marker
+                fi
+            fi
+            git reset --hard
+            git checkout main
+            git checkout master
+            ${GPP} -p
+            git reset --hard
+            /z/tools/merge_tracked_git_original_4_branch.sh -m
+            retVal=$?
+            if [ $retVal -ge 2 ]; then
+                touch $TMPDST.marker
+            fi
+            git reset --hard
+        }  2>&1  | tee -a $TMPDST.log
+
+        if [[ -f $TMPDST.marker ]] ; then
+            {
+                echo "==================================================================="
+                echo "TODO ::: $( pwd )"
+                echo "-------------------------------------------------------------------"
+                cat $TMPDST.log
+                echo "==================================================================="
+            } > "$0.__TODO__.log"
+        fi
+        rm $TMPDST.*
+    fi
 fi
