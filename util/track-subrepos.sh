@@ -8,6 +8,7 @@ SCRIPT=$( basename "$0" )
 
 if [ "$1" != "TRACK-AND-MERGE" ] ; then
     rm "$0.__TODO__.log"                                                                                        2> /dev/null
+    touch "$0.__TODO__.log"
     ${GPP} -x "$( realpath "$0" )" TRACK-AND-MERGE
 else
     echo "PWD = $( pwd )"
@@ -54,7 +55,7 @@ else
                 echo "-------------------------------------------------------------------"
                 cat $TMPDST.log
                 echo "==================================================================="
-            } > "$0.__TODO__.log"
+            } >> "$0.__TODO__.log"
         fi
         rm $TMPDST.*
     fi
